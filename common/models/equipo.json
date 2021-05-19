@@ -7,18 +7,18 @@
     "validateUpsert": true
   },
   "properties": {
-    "Nombre": {
+    "nombre": {
       "type": "string",
       "required": true
     },
-    "FotoEquipo": {
+    "fotoEquipo": {
       "type": "string",
       "required": false
     }
   },
   "validations": [],
   "relations": {
-    "alumnos": {
+    "Alumnos": {
       "type": "hasMany",
       "model": "Alumno",
       "foreignKey": "equipoId",
@@ -27,7 +27,7 @@
       },
       "through": "AsignacionEquipo"
     },
-    "juegoDePuntos": {
+    "JuegosDePuntos": {
       "type": "hasMany",
       "model": "JuegoDePuntos",
       "foreignKey": "equipoId",
@@ -36,7 +36,7 @@
       },
       "through": "EquipoJuegoDePuntos"
     },
-    "juegoDeColeccions": {
+    "JuegosDeColeccions": {
       "type": "hasMany",
       "model": "JuegoDeColeccion",
       "foreignKey": "equipoId",
@@ -45,25 +45,25 @@
       },
       "through": "EquipoJuegoDeColeccion"
     },
-    "juegosDeCompeticionFormulaUno": {
+    "JuegosDeCompeticionFormulaUno": {
       "type": "hasMany",
       "model": "JuegoDeCompeticionFormulaUno",
-      "foreignKey": "EquipoId",
+      "foreignKey": "equipoId",
       "options": {
         "nestRemoting": true
       },
       "through": "EquipoJuegoDeCompeticionFormulaUno"
     },
-    "juegosDeCompeticionLiga": {
+    "JuegosDeCompeticionLiga": {
       "type": "hasMany",
       "model": "JuegoDeCompeticionLiga",
-      "foreignKey": "EquipoId",
+      "foreignKey": "equipoId",
       "options": {
         "nestRemoting": true
       },
       "through": "EquipoJuegoDeCompeticionLiga"
     },
-    "juegosDeEvaluacion": {
+    "JuegosDeEvaluacion": {
       "type": "hasMany",
       "model": "JuegoDeEvaluacion",
       "foreignKey": "equipoId",
@@ -72,7 +72,7 @@
       },
       "through": "EquipoJuegoDeEvaluacion"
     },
-    "juegoDeVotacionUnoATodos": {
+    "JuegosDeVotacionUnoATodos": {
       "type": "hasMany",
       "model": "JuegoDeVotacionUnoATodos",
       "foreignKey": "equipoId",

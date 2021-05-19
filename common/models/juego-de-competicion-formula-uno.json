@@ -7,48 +7,48 @@
     "validateUpsert": true
   },
   "properties": {
-    "NumeroTotalJornadas": {
+    "numeroTotalJornadas": {
       "type": "number",
       "required": true
     },
-    "NumeroParticipantesPuntuan": {
+    "numeroParticipantesPuntuan": {
       "type": "number",
       "required": true
     },
-    "Puntos": {
+    "puntos": {
       "type": [
         "number"
       ],
       "required": true
     },
-    "NombreJuego": {
+    "nombreJuego": {
       "type": "string",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "jornadasDeCompeticionFormulaUno": {
+    "JornadasDeCompeticionFormulaUno": {
       "type": "hasMany",
       "model": "JornadaDeCompeticionFormulaUno",
-      "foreignKey": "JuegoDeCompeticionFormulaUnoId",
+      "foreignKey": "juegoDeCompeticionFormulaUnoId",
       "options": {
         "nestRemoting": true
       }
     },
-    "alumnos": {
+    "Alumnos": {
       "type": "hasMany",
       "model": "Alumno",
-      "foreignKey": "JuegoDeCompeticionFormulaUnoId",
+      "foreignKey": "juegoDeCompeticionFormulaUnoId",
       "options": {
         "nestRemoting": true
       },
       "through": "AlumnoJuegoDeCompeticionFormulaUno"
     },
-    "equipos": {
+    "Equipos": {
       "type": "hasMany",
       "model": "Equipo",
-      "foreignKey": "JuegoDeCompeticionFormulaUnoId",
+      "foreignKey": "juegoDeCompeticionFormulaUnoId",
       "options": {
         "nestRemoting": true
       },

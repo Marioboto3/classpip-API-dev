@@ -1,6 +1,6 @@
 {
-  "name": "alumnojuegodecuento",
-  "plural": "alumnojuegodecuento",
+  "name": "AlumnoJuegoDeCuento",
+  "plural": "AlumnosJuegoDeCuento",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -37,10 +37,10 @@
   },
   "validations": [],
   "relations": {
-    "Libro": {
+    "Libros": {
       "type": "hasMany",
       "model": "Libro",
-      "foreignKey": "alumnjoJuegoLibroId"
+      "foreignKey": "alumnoJuegoDeLibroId"
     }
   },
   "acls": [],

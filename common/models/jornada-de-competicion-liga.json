@@ -7,21 +7,21 @@
     "validateUpsert": true
   },
   "properties": {
-    "Fecha": {
+    "fecha": {
       "type": "date",
       "required": false
     },
-    "CriterioGanador": {
+    "criterioGanador": {
       "type": "string",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "enfrentamientosLiga": {
+    "EnfrentamientosLiga": {
       "type": "hasMany",
       "model": "EnfrentamientoLiga",
-      "foreignKey": "JornadaDeCompeticionLigaId",
+      "foreignKey": "jornadaDeCompeticionLigaId",
       "options": {
         "nestRemoting": true
       }

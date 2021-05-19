@@ -1,41 +1,41 @@
 {
   "name": "JuegoDeVotacionRapida",
-  "plural": "juegosDeVotacionRapida",
+  "plural": "JuegosDeVotacionRapida",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "NombreJuego": {
+    "nombreJuego": {
       "type": "string",
       "required": true
     },
-    "Tipo": {
+    "tipo": {
       "type": "string",
       "required": true
     },
-    "Clave": {
+    "clave": {
       "type": "string",
       "required": true
     },
-    "ModoReparto": {
+    "modoReparto": {
       "type": "string",
       "required": true
     },
-    "Conceptos": {
+    "conceptos": {
       "type": [
         "string"
       ],
       "required": true
     },
-    "Puntos": {
+    "puntos": {
       "type": [
         "number"
       ],
       "required": true
     },
-    "Respuestas": {
+    "respuestas": {
       "type": "object",
       "required": false
     }

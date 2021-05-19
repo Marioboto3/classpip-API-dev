@@ -7,44 +7,44 @@
     "validateUpsert": true
   },
   "properties": {
-    "NombreJuego": {
+    "nombreJuego": {
       "type": "string",
       "required": true
     },
-    "PuntuacionCorrecta": {
+    "puntuacionCorrecta": {
       "type": "number",
       "required": true
     },
-    "PuntuacionIncorrecta": {
+    "puntuacionIncorrecta": {
       "type": "number",
       "required": true
     },
-    "PuntuacionCorrectaBonus": {
+    "puntuacionCorrectaBonus": {
       "type": "number",
       "required": true
     },
-    "PuntuacionIncorrectaBonus": {
+    "puntuacionIncorrectaBonus": {
       "type": "number",
       "required": true
     },
-    "PreguntasBasicas": {
+    "preguntasBasicas": {
       "type": [
         "number"
       ],
       "required": true
     },
-    "PreguntasBonus": {
+    "preguntasBonus": {
       "type": [
         "number"
       ],
       "required": true
     },
-    "JuegoActivo": {
+    "juegoActivo": {
       "type": "boolean",
       "required": true,
       "default": false
     },
-    "JuegoTerminado": {
+    "juegoTerminado": {
       "type": "boolean",
       "required": true,
       "default": false
@@ -52,7 +52,7 @@
   },
   "validations": [],
   "relations": {
-    "alumnos": {
+    "Alumnos": {
       "type": "hasMany",
       "model": "Alumno",
       "foreignKey": "juegoDeGeocachingId",
@@ -61,7 +61,7 @@
       },
       "through": "AlumnoJuegoDeGeocaching"
     },
-    "pregunta": {
+    "Preguntas": {
       "type": "hasMany",
       "model": "Pregunta",
       "foreignKey": "JuegoDeGeocachingId",

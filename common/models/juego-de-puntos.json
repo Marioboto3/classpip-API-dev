@@ -7,19 +7,19 @@
     "validateUpsert": true
   },
   "properties": {
-    "NombreJuego": {
+    "nombreJuego": {
       "type": "string",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "nivels": {
+    "Nivels": {
       "type": "hasMany",
       "model": "Nivel",
       "foreignKey": "juegoDePuntosId"
     },
-    "puntos": {
+    "Puntos": {
       "type": "hasMany",
       "model": "Punto",
       "foreignKey": "juegoDePuntosId",
@@ -28,7 +28,7 @@
       },
       "through": "AsignacionPuntoJuego"
     },
-    "alumnos": {
+    "Alumnos": {
       "type": "hasMany",
       "model": "Alumno",
       "foreignKey": "juegoDePuntosId",
@@ -37,7 +37,7 @@
       },
       "through": "AlumnoJuegoDePuntos"
     },
-    "equipos": {
+    "Equipos": {
       "type": "hasMany",
       "model": "Equipo",
       "foreignKey": "juegoDePuntosId",

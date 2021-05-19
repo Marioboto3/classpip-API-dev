@@ -9,7 +9,7 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "juegoDeGeocaching": {
+    "JuegosDeGeocaching": {
       "type": "belongsTo",
       "model": "JuegoDeGeocaching",
       "foreignKey": "JuegoDeGeocachingId",
@@ -17,7 +17,7 @@
         "nestRemoting": true
       }
     },
-    "pregunta": {
+    "Preguntas": {
       "type": "belongsTo",
       "model": "Pregunta",
       "foreignKey": "preguntaId",

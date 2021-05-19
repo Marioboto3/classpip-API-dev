@@ -7,18 +7,18 @@
     "validateUpsert": true
   },
   "properties": {
-    "NombreJuego": {
+    "nombreJuego": {
       "type": "string",
       "required": true
     },
-    "Asignacion": {
+    "asignacion": {
       "type": "string",
       "required": false
     }
   },
   "validations": [],
   "relations": {
-    "alumnos": {
+    "Alumnos": {
       "type": "hasMany",
       "model": "Alumno",
       "foreignKey": "juegoDeColeccionId",
@@ -27,7 +27,7 @@
       },
       "through": "AlumnoJuegoDeColeccion"
     },
-    "equipos": {
+    "Equipos": {
       "type": "hasMany",
       "model": "Equipo",
       "foreignKey": "juegoDeColeccionId",

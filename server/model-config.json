@@ -139,8 +139,8 @@
     "dataSource": "baseDatos",
     "public": true
   },
-  "imagen": {
-    "dataSource": "imagenes",
+  "Imagen": {
+    "dataSource": "baseDatos",
     "public": true
   },
   "Insignia": {
@@ -327,23 +327,23 @@
     "dataSource": "baseDatos",
     "public": true
   },
-  "recursosLibro": {
+  "RecursosLibro": {
     "dataSource": "baseDatos",
     "public": true
   },
-  "recursosJuegoLibro": {
+  "RecursosJuegoLibro": {
     "dataSource": "baseDatos",
     "public": true
   },
-  "juegoLibroConcurso": {
+  "JuegoLibroConcurso": {
     "dataSource": "baseDatos",
     "public": true
   },
-  "juego-de-libro": {
+  "JuegoDeLibro": {
     "dataSource": "baseDatos",
     "public": true
   },
-  "alumnojuegodecuento": {
+  "AlumnoJuegoDeCuento": {
     "dataSource": "baseDatos",
     "public": true
   },
@@ -351,16 +351,16 @@
     "dataSource": "baseDatos",
     "public": true
   },
-  "escena": {
+  "Escena": {
     "dataSource": "baseDatos",
     "public": true
   },
-  "frame": {
+  "Frame": {
     "dataSource": "baseDatos",
     "public": true
   },
-  "pruebas": {
-    "dataSource": "db",
+  "Prueba": {
+    "dataSource": "baseDatos",
     "public": true
   },
   "EquipoJuegoDeVotacionUnoATodos": {

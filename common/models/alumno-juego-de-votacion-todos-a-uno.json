@@ -1,21 +1,21 @@
 {
   "name": "AlumnoJuegoDeVotacionTodosAUno",
-  "plural": "alumnosJuegoDeVotacionTodosAUno",
+  "plural": "AlumnosJuegoDeVotacionTodosAUno",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "PuntosTotales": {
+    "puntosTotales": {
       "type": "number"
     },
-    "VotosEmitidos": {
+    "votosEmitidos": {
       "type": [
         "object"
       ]
     },
-    "VotosRecibidos": {
+    "votosRecibidos": {
       "type": [
         "object"
       ]
@@ -23,12 +23,12 @@
   },
   "validations": [],
   "relations": {
-    "alumno": {
+    "Alumnos": {
       "type": "belongsTo",
       "model": "Alumno",
       "foreignKey": "alumnoId"
     },
-    "juegoDeVotacionTodosAUno": {
+    "JuegosDeVotacionTodosAUno": {
       "type": "belongsTo",
       "model": "JuegoDeVotacionTodosAUno",
       "foreignKey": "juegoDeVotacionTodosAUnoId"

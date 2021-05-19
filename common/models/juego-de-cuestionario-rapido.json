@@ -1,53 +1,53 @@
 {
   "name": "JuegoDeCuestionarioRapido",
-  "plural": "juegosDeCuestionarioRapido",
+  "plural": "JuegosDeCuestionarioRapido",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "NombreJuego": {
+    "nombreJuego": {
       "type": "string",
       "required": true
     },
-    "Tipo": {
+    "tipo": {
       "type": "string",
       "required": true
     },
-    "Modalidad": {
+    "modalidad": {
       "type": "string",
       "required": true
     },
-    "PuntuacionCorrecta": {
+    "puntuacionCorrecta": {
       "type": "number",
       "required": true
     },
-    "PuntuacionIncorrecta": {
+    "puntuacionIncorrecta": {
       "type": "number",
       "required": true
     },
-    "TiempoLimite": {
+    "tiempoLimite": {
       "type": "number",
       "required": false
     },
-    "Presentacion": {
+    "presentacion": {
       "type": "string",
       "required": true
     },
-    "JuegoActivo": {
+    "juegoActivo": {
       "type": "boolean",
       "required": true
     },
-    "JuegoTerminado": {
+    "juegoTerminado": {
       "type": "boolean",
       "required": true
     },
-    "Clave": {
+    "clave": {
       "type": "string",
       "required": true
     },
-    "Respuestas": {
+    "respuestas": {
       "type": "object",
       "required": false
     }

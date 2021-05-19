@@ -1,25 +1,25 @@
 {
   "name": "JuegoDeEncuestaRapida",
-  "plural": "juegosDeEncuestaRapida",
+  "plural": "JuegosDeEncuestaRapida",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "NombreJuego": {
+    "nombreJuego": {
       "type": "string",
       "required": true
     },
-    "Tipo": {
+    "tipo": {
       "type": "string",
       "required": true
     },
-    "Clave": {
+    "clave": {
       "type": "string",
       "required": true
     },
-    "Respuestas": {
+    "respuestas": {
       "type": "object",
       "required": false
     }

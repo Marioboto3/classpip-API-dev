@@ -1,30 +1,30 @@
 {
   "name": "CuestionarioSatisfaccion",
-  "plural": "cuestionariosSatisfaccion",
+  "plural": "CuestionariosSatisfaccion",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "Titulo": {
+    "titulo": {
       "type": "string",
       "required": true
     },
-    "Descripcion": {
+    "descripcion": {
       "type": "string"
     },
-    "Publico": {
+    "publico": {
       "type": "boolean",
       "required": false,
       "default": false
     },
-    "Afirmaciones": {
+    "afirmaciones": {
       "type": [
         "string"
       ]
     },
-    "PreguntasAbiertas": {
+    "preguntasAbiertas": {
       "type": [
         "string"
       ]
@@ -32,12 +32,12 @@
   },
   "validations": [],
   "relations": {
-    "juegoDeCuestionarioSatisfaccions": {
+    "JuegosDeCuestionarioSatisfaccion": {
       "type": "hasMany",
       "model": "JuegoDeCuestionarioSatisfaccion",
       "foreignKey": "cuestionarioSatisfaccionId"
     },
-    "juegosDeEncuestaRapida": {
+    "JuegosDeEncuestaRapida": {
       "type": "hasMany",
       "model": "JuegoDeEncuestaRapida",
       "foreignKey": "cuestionarioDeSatisfaccionId"

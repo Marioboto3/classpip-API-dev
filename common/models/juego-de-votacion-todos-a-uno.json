@@ -1,38 +1,38 @@
 {
   "name": "JuegoDeVotacionTodosAUno",
-  "plural": "juegosDeVotacionTodosAUno",
+  "plural": "JuegosDeVotacionTodosAUno",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "NombreJuego": {
+    "nombreJuego": {
       "type": "string",
       "required": true
     },
-    "Tipo": {
+    "tipo": {
       "type": "string",
       "required": true
     },
-    "Modo": {
+    "modo": {
       "type": "string",
       "required": true
     },
-    "JuegoActivo": {
+    "juegoActivo": {
       "type": "boolean",
       "default": true
     },
-    "JuegoTerminado": {
+    "juegoTerminado": {
       "type": "boolean"
     },
-    "Conceptos": {
+    "conceptos": {
       "type": [
         "string"
       ],
       "required": true
     },
-    "Pesos": {
+    "pesos": {
       "type": [
         "number"
       ],
@@ -41,7 +41,7 @@
   },
   "validations": [],
   "relations": {
-    "alumnos": {
+    "Alumnos": {
       "type": "hasMany",
       "model": "Alumno",
       "foreignKey": "juegoDeVotacionTodosAUnoId",

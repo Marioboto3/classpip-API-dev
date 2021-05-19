@@ -7,15 +7,15 @@
     "validateUpsert": true
   },
   "properties": {
-    "Tipo": {
+    "tipo": {
       "type": "string",
       "required": true
     },
-    "Modo": {
+    "modo": {
       "type": "string",
       "required": true
     },
-    "JuegoActivo": {
+    "juegoActivo": {
       "type": "boolean",
       "required": true,
       "default": true

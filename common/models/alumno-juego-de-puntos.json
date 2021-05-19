@@ -1,13 +1,13 @@
 {
   "name": "AlumnoJuegoDePuntos",
-  "plural": "AlumnoJuegosDePuntos",
+  "plural": "AlumnosJuegoDePuntos",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "PuntosTotalesAlumno": {
+    "puntosTotalesAlumno": {
       "type": "number",
       "required": true,
       "default": 0
@@ -15,7 +15,7 @@
   },
   "validations": [],
   "relations": {
-    "alumno": {
+    "Alumnos": {
       "type": "belongsTo",
       "model": "Alumno",
       "foreignKey": "alumnoId",
@@ -23,7 +23,7 @@
         "nestRemoting": true
       }
     },
-    "juegoDePuntos": {
+    "JuegosDePuntos": {
       "type": "belongsTo",
       "model": "JuegoDePuntos",
       "foreignKey": "juegoDePuntosId",
@@ -31,7 +31,7 @@
         "nestRemoting": true
       }
     },
-    "puntos": {
+    "Puntos": {
       "type": "hasMany",
       "model": "Punto",
       "foreignKey": "alumnoJuegoDePuntosId",

@@ -1,21 +1,21 @@
 {
   "name": "FamiliaImagenesPerfil",
-  "plural": "familiasImagenesPerfil",
+  "plural": "FamiliasImagenesPerfil",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "NombreFamilia": {
+    "nombreFamilia": {
       "type": "string",
       "required": true
     },
-    "NumeroImagenes": {
+    "numeroImagenes": {
       "type": "number",
       "required": true
     },
-    "Imagenes": {
+    "imagenes": {
       "type": [
         "string"
       ],

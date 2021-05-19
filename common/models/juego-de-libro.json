@@ -1,6 +1,6 @@
 {
-  "name": "juego-de-libro",
-  "plural": "juegodelibro",
+  "name": "JuegoDeLibro",
+  "plural": "JuegosDeLibro",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -62,17 +62,17 @@
   },
   "validations": [],
   "relations": {
-    "alumnojuegodecuento": {
+    "AlumnosJuegoDeCuento": {
       "type": "hasMany",
       "model": "alumnojuegodecuento",
       "foreignKey": "juegoId"
     },
-    "juegoLibroConcurso": {
+    "JuegosLibroConcurso": {
       "type": "hasMany",
       "model": "juegoLibroConcurso",
       "foreignKey": "juegoId"
     },
-    "recursosJuegoLibro": {
+    "RecursosJuegoLibro": {
       "type": "hasMany",
       "model": "recursosJuegoLibro",
       "foreignKey": "juegoId"

@@ -1,23 +1,23 @@
 {
   "name": "AlumnoJuegoDeCuestionarioSatisfaccion",
-  "plural": "alumnosJuegoDeCuestionarioSatisfaccion",
+  "plural": "AlumnosJuegoDeCuestionarioSatisfaccion",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "Contestado": {
+    "contestado": {
       "type": "boolean",
       "required": true,
       "default": false
     },
-    "RespuestasAfirmaciones": {
+    "respuestasAfirmaciones": {
       "type": [
         "number"
       ]
     },
-    "RespuestasPreguntasAbiertas": {
+    "respuestasPreguntasAbiertas": {
       "type": [
         "string"
       ]
@@ -25,12 +25,12 @@
   },
   "validations": [],
   "relations": {
-    "alumno": {
+    "Alumnos": {
       "type": "belongsTo",
       "model": "Alumno",
       "foreignKey": "alumnoId"
     },
-    "juegoDeCuestionarioSatisfaccion": {
+    "JuegosDeCuestionarioSatisfaccion": {
       "type": "belongsTo",
       "model": "JuegoDeCuestionarioSatisfaccion",
       "foreignKey": "juegoDeCuestionarioSatisfaccionId"

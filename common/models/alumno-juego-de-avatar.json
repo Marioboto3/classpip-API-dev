@@ -1,40 +1,40 @@
 {
   "name": "AlumnoJuegoDeAvatar",
-  "plural": "alumnosJuegoAvatar",
+  "plural": "AlumnosJuegoAvatar",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "Silueta": {
+    "silueta": {
       "type": "string"
     },
-    "Privilegios": {
+    "privilegios": {
       "type": [
         "boolean"
       ],
       "required": true
     },
-    "Complemento1": {
+    "complemento1": {
       "type": "string"
     },
-    "Complemento2": {
+    "complemento2": {
       "type": "string"
     },
-    "Complemento3": {
+    "complemento3": {
       "type": "string"
     },
-    "Complemento4": {
+    "complemento4": {
       "type": "string"
     },
-    "Voz": {
+    "voz": {
       "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "alumno": {
+    "Alumnos": {
       "type": "belongsTo",
       "model": "Alumno",
       "foreignKey": "alumnoId",
@@ -42,7 +42,7 @@
         "nestRemoting": true
       }
     },
-    "juegoDeAvatar": {
+    "JuegosDeAvatar": {
       "type": "belongsTo",
       "model": "JuegoDeAvatar",
       "foreignKey": "juegoDeAvatarId",

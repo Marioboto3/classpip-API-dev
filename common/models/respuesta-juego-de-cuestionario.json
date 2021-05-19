@@ -1,13 +1,13 @@
 {
   "name": "RespuestaJuegoDeCuestionario",
-  "plural": "respuestasJuegoDeCuestionario",
+  "plural": "RespuestasJuegoDeCuestionario",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "Respuesta": {
+    "respuesta": {
       "type": [
         "string"
       ],
@@ -16,12 +16,12 @@
   },
   "validations": [],
   "relations": {
-    "alumnoJuegoDeCuestionario": {
+    "AlumnosJuegoDeCuestionario": {
       "type": "belongsTo",
       "model": "AlumnoJuegoDeCuestionario",
       "foreignKey": "alumnoJuegoDeCuestionarioId"
     },
-    "pregunta": {
+    "Pregunta": {
       "type": "belongsTo",
       "model": "Pregunta",
       "foreignKey": "preguntaId"

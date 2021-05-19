@@ -7,14 +7,14 @@
     "validateUpsert": true
   },
   "properties": {
-    "Fecha": {
+    "fecha": {
       "type": "string",
       "required": false
     }
   },
   "validations": [],
   "relations": {
-    "alumnoJuegoDeColeccion": {
+    "AlumnosJuegoDeColeccion": {
       "type": "belongsTo",
       "model": "AlumnoJuegoDeColeccion",
       "foreignKey": "alumnoJuegoDeColeccionId",
@@ -22,7 +22,7 @@
         "nestRemoting": true
       }
     },
-    "cromo": {
+    "Cromos": {
       "type": "belongsTo",
       "model": "Cromo",
       "foreignKey": "cromoId",

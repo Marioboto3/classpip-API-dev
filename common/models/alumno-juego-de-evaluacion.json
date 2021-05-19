@@ -1,6 +1,6 @@
 {
   "name": "AlumnoJuegoDeEvaluacion",
-  "plural": "alumnosJuegoDeEvaluacion",
+  "plural": "AlumnosJuegoDeEvaluacion",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -28,7 +28,7 @@
   },
   "validations": [],
   "relations": {
-    "alumno": {
+    "Alumnos": {
       "type": "belongsTo",
       "model": "Alumno",
       "foreignKey": "alumnoId",
@@ -36,7 +36,7 @@
         "nestRemoting": true
       }
     },
-    "juegoDeEvaluacion": {
+    "JuegosDeEvaluacion": {
       "type": "belongsTo",
       "model": "JuegoDeEvaluacion",
       "foreignKey": "juegoDeEvaluacionId",

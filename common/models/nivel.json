@@ -7,31 +7,31 @@
     "validateUpsert": true
   },
   "properties": {
-    "Nombre": {
+    "nombre": {
       "type": "string",
       "required": true
     },
-    "PuntosAlcanzar": {
+    "puntosAlcanzar": {
       "type": "number",
       "required": true
     },
-    "PrivilegiosDelNivel": {
+    "privilegiosDelNivel": {
       "type": "string",
       "required": false
     },
-    "Imagen": {
+    "imagen": {
       "type": "string",
       "required": false
     }
   },
   "validations": [],
   "relations": {
-    "alumnoJuegoDePuntos": {
+    "AlumnosJuegoDePuntos": {
       "type": "hasMany",
       "model": "AlumnoJuegoDePuntos",
       "foreignKey": "nivelId"
     },
-    "equipoJuegoDePuntos": {
+    "EquiposJuegoDePuntos": {
       "type": "hasMany",
       "model": "EquipoJuegoDePuntos",
       "foreignKey": "nivelId"

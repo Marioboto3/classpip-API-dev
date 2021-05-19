@@ -7,14 +7,14 @@
     "validateUpsert": true
   },
   "properties": {
-    "TipoCompeticion": {
+    "tipoCompeticion": {
       "type": "string",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "ligas": {
+    "Ligas": {
       "type": "hasOne",
       "model": "Liga",
       "foreignKey": "juegoDeCompeticionId",

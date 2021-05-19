@@ -7,14 +7,14 @@
     "validateUpsert": true
   },
   "properties": {
-    "Fecha": {
+    "fecha": {
       "type": "date"
     },
-    "CriterioGanador": {
+    "criterioGanador": {
       "type": "string",
       "required": true
     },
-    "GanadoresFormulaUno": {
+    "ganadoresFormulaUno": {
       "type": [
         "number"
       ]

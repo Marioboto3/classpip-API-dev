@@ -7,13 +7,13 @@
     "validateUpsert": true
   },
   "properties": {
-    "Hora": {
+    "hora": {
       "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "sesionClase": {
+    "SesionesClase": {
       "type": "belongsTo",
       "model": "SesionClase",
       "foreignKey": "sesionClaseId",
@@ -21,7 +21,7 @@
         "nestRemoting": true
       }
     },
-    "matricula": {
+    "Matriculas": {
       "type": "belongsTo",
       "model": "Matricula",
       "foreignKey": "matriculaId",

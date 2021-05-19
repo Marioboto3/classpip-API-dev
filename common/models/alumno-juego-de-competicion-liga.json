@@ -7,7 +7,7 @@
     "validateUpsert": true
   },
   "properties": {
-    "PuntosTotalesAlumno": {
+    "puntosTotalesAlumno": {
       "type": "number",
       "required": true,
       "default": 0
@@ -15,18 +15,18 @@
   },
   "validations": [],
   "relations": {
-    "alumno": {
+    "Alumnos": {
       "type": "belongsTo",
       "model": "Alumno",
-      "foreignKey": "AlumnoId",
+      "foreignKey": "alumnoId",
       "options": {
         "nestRemoting": true
       }
     },
-    "juegoDeCompeticionLiga": {
+    "JuegosDeCompeticionLiga": {
       "type": "belongsTo",
       "model": "JuegoDeCompeticionLiga",
-      "foreignKey": "JuegoDeCompeticionLigaId",
+      "foreignKey": "juegoDeCompeticionLigaId",
       "options": {
         "nestRemoting": true
       }

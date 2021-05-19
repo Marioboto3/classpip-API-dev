@@ -1,6 +1,6 @@
 {
-  "name": "pruebas",
-  "plural": "pruebas",
+  "name": "Prueba",
+  "plural": "Pruebas",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

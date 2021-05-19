@@ -9,7 +9,7 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "juegoDeColeccion": {
+    "JuegosDeColeccion": {
       "type": "belongsTo",
       "model": "JuegoDeColeccion",
       "foreignKey": "juegoDeColeccionId",
@@ -17,7 +17,7 @@
         "nestRemoting": true
       }
     },
-    "equipo": {
+    "Equipos": {
       "type": "belongsTo",
       "model": "Equipo",
       "foreignKey": "equipoId",
@@ -25,7 +25,7 @@
         "nestRemoting": true
       }
     },
-    "cromos": {
+    "Cromos": {
       "type": "hasMany",
       "model": "Cromo",
       "foreignKey": "equipoJuegoDeColeccionId",

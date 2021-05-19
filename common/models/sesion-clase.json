@@ -7,22 +7,22 @@
     "validateUpsert": true
   },
   "properties": {
-    "Descripcion": {
+    "descripcion": {
       "type": "string"
     },
-    "Dia": {
+    "dia": {
       "type": "string"
     },
-    "Hora": {
+    "hora": {
       "type": "string"
     },
-    "Asistencia": {
+    "asistencia": {
       "type": [
         "object"
       ],
       "required": false
     },
-    "Observaciones": {
+    "observaciones": {
       "type": [
         "string"
       ],
@@ -31,7 +31,7 @@
   },
   "validations": [],
   "relations": {
-    "matriculas": {
+    "Matriculas": {
       "type": "hasMany",
       "model": "Matricula",
       "foreignKey": "sesionClaseId",

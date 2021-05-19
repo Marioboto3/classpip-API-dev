@@ -1,39 +1,39 @@
 {
   "name": "JuegoDeVotacionUnoATodos",
-  "plural": "juegosDeVotacionUnoATodos",
+  "plural": "JuegosDeVotacionUnoATodos",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "Tipo": {
+    "tipo": {
       "type": "string",
       "required": true
     },
-    "NombreJuego": {
+    "nombreJuego": {
       "type": "string",
       "required": true
     },
-    "Modo": {
+    "modo": {
       "type": "string",
       "required": true
     },
-    "ModoReparto": {
+    "modoReparto": {
       "type": "string",
       "required": true
     },
-    "JuegoActivo": {
+    "juegoActivo": {
       "type": "boolean",
       "required": true,
       "default": false
     },
-    "JuegoTerminado": {
+    "juegoTerminado": {
       "type": "boolean",
       "required": true,
       "default": false
     },
-    "Puntos": {
+    "puntos": {
       "type": [
         "number"
       ],
@@ -42,7 +42,7 @@
   },
   "validations": [],
   "relations": {
-    "alumnos": {
+    "Alumnos": {
       "type": "hasMany",
       "model": "Alumno",
       "foreignKey": "juegoDeVotacionUnoATodosId",
@@ -51,7 +51,7 @@
       },
       "through": "AlumnoJuegoDeVotacionUnoATodos"
     },
-    "equipos": {
+    "Equipos": {
       "type": "hasMany",
       "model": "Equipo",
       "foreignKey": "juegoDeVotacionUnoATodosId",

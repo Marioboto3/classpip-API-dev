@@ -1,25 +1,25 @@
 {
   "name": "PuntoGeolocalizable",
-  "plural": "PuntosGeolocalizables",
+  "plural": "PuntosGeolocalizable",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "Latitud": {
+    "latitud": {
       "type": "string",
       "required": true
     },
-    "Longitud": {
+    "longitud": {
       "type": "string",
       "required": true
     },
-    "PistaFacil": {
+    "pistaFacil": {
       "type": "string",
       "required": true
     },
-    "PistaDificil": {
+    "pistaDificil": {
       "type": "string",
       "required": true
     }

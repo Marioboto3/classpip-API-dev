@@ -1,5 +1,5 @@
 {
-  "name": "frame",
+  "name": "Frame",
   "plural": "Frames",
   "base": "PersistedModel",
   "idInjection": true,

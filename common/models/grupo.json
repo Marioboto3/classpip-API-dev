@@ -7,18 +7,18 @@
     "validateUpsert": true
   },
   "properties": {
-    "Nombre": {
+    "nombre": {
       "type": "string",
       "required": true
     },
-    "Descripcion": {
+    "descripcion": {
       "type": "string",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "alumnos": {
+    "Alumnos": {
       "type": "hasMany",
       "model": "Alumno",
       "foreignKey": "grupoId",
@@ -27,32 +27,32 @@
       },
       "through": "Matricula"
     },
-    "equipos": {
+    "Equipos": {
       "type": "hasMany",
       "model": "Equipo",
       "foreignKey": "grupoId"
     },
-    "juegoDePuntos": {
+    "JuegosDePuntos": {
       "type": "hasMany",
       "model": "JuegoDePuntos",
       "foreignKey": "grupoId"
     },
-    "juegoDeColeccions": {
+    "JuegosDeColeccion": {
       "type": "hasMany",
       "model": "JuegoDeColeccion",
       "foreignKey": "grupoId"
     },
-    "juegoDeCompeticions": {
+    "JuegosDeCompeticion": {
       "type": "hasMany",
       "model": "JuegoDeCompeticion",
       "foreignKey": "grupoId"
     },
-    "asignacionEquipos": {
+    "AsignacionesEquipos": {
       "type": "hasMany",
       "model": "AsignacionEquipo",
       "foreignKey": "grupoId"
     },
-    "juegosDeCompeticionLiga": {
+    "JuegosDeCompeticionLiga": {
       "type": "hasMany",
       "model": "JuegoDeCompeticionLiga",
       "foreignKey": "grupoId",
@@ -60,7 +60,7 @@
         "nestRemoting": true
       }
     },
-    "juegosDeCompeticionFormulaUno": {
+    "JuegosDeCompeticionFormulaUno": {
       "type": "hasMany",
       "model": "JuegoDeCompeticionFormulaUno",
       "foreignKey": "grupoId",
@@ -68,52 +68,52 @@
         "nestRemoting": true
       }
     },
-    "juegosDeCuestionario": {
+    "JuegosDeCuestionario": {
       "type": "hasMany",
       "model": "JuegoDeCuestionario",
       "foreignKey": "grupoId"
     },
-    "juegoDeAvatars": {
+    "JuegosDeAvatar": {
       "type": "hasMany",
       "model": "JuegoDeAvatar",
       "foreignKey": "grupoId"
     },
-    "juegosDeGeocaching": {
+    "JuegosDeGeocaching": {
       "type": "hasMany",
       "model": "JuegoDeGeocaching",
       "foreignKey": "grupoId"
     },
-    "juegoDeVotacionUnoATodos": {
+    "JuegosDeVotacionUnoATodos": {
       "type": "hasMany",
       "model": "JuegoDeVotacionUnoATodos",
       "foreignKey": "grupoId"
     },
-    "juegoDeVotacionTodosAUno": {
+    "JuegosDeVotacionTodosAUno": {
       "type": "hasMany",
       "model": "JuegoDeVotacionTodosAUno",
       "foreignKey": "grupoId"
     },
-    "sesionesClase": {
+    "SesionesClase": {
       "type": "hasMany",
       "model": "SesionClase",
       "foreignKey": "grupoId"
     },
-    "juegoDeCuestionarioSatisfaccion": {
+    "JuegosDeCuestionarioSatisfaccion": {
       "type": "hasMany",
       "model": "JuegoDeCuestionarioSatisfaccion",
       "foreignKey": "grupoId"
     },
-    "juegosDeEvaluacion": {
+    "JuegosDeEvaluacion": {
       "type": "hasMany",
       "model": "JuegoDeEvaluacion",
       "foreignKey": "grupoId"
     },
-    "juegodelibro": {
+    "JuegosDeLibro": {
       "type": "hasMany",
-      "model": "juego-de-libro",
+      "model": "JuegoDeLibro",
       "foreignKey": "grupoId"
     },
-    "juegoDeEscapeRooms": {
+    "JuegosDeEscapeRoom": {
       "type": "hasMany",
       "model": "JuegoDeEscapeRoom",
       "foreignKey": "grupoId"

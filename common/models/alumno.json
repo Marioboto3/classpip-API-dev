@@ -7,43 +7,43 @@
     "validateUpsert": true
   },
   "properties": {
-    "Nombre": {
+    "nombre": {
       "type": "string",
       "required": true
     },
-    "PrimerApellido": {
+    "primerApellido": {
       "type": "string",
       "required": true
     },
-    "SegundoApellido": {
+    "segundoApellido": {
       "type": "string",
       "required": true
     },
-    "ImagenPerfil": {
+    "imagenPerfil": {
       "type": "string",
       "required": false
     },
-    "PermisoCambioImagenPerfil": {
+    "permisoCambioImagenPerfil": {
       "type": "boolean",
       "required": false,
       "default": false
     },
-    "Username": {
+    "username": {
       "type": "string",
       "required": true
     },
-    "Email": {
+    "email": {
       "type": "string",
       "required": true
     },
-    "Password": {
+    "password": {
       "type": "string",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "grupos": {
+    "Grupos": {
       "type": "hasMany",
       "model": "Grupo",
       "foreignKey": "alumnoId",
@@ -52,7 +52,7 @@
       },
       "through": "Matricula"
     },
-    "equipos": {
+    "Equipos": {
       "type": "hasMany",
       "model": "Equipo",
       "foreignKey": "alumnoId",
@@ -61,7 +61,7 @@
       },
       "through": "AsignacionEquipo"
     },
-    "juegoDePuntos": {
+    "JuegosDePuntos": {
       "type": "hasMany",
       "model": "JuegoDePuntos",
       "foreignKey": "alumnoId",
@@ -70,7 +70,7 @@
       },
       "through": "AlumnoJuegoDePuntos"
     },
-    "juegoDeEscapeRoom": {
+    "JuegosDeEscapeRoom": {
       "type": "hasMany",
       "model": "JuegoDeEscapeRoom",
       "foreignKey": "alumnoId",
@@ -79,7 +79,7 @@
       },
       "through": "AlumnoJuegoDeEscapeRoom"
     },
-    "juegoDeColeccions": {
+    "JuegosDeColeccions": {
       "type": "hasMany",
       "model": "JuegoDeColeccion",
       "foreignKey": "alumnoId",
@@ -88,25 +88,25 @@
       },
       "through": "AlumnoJuegoDeColeccion"
     },
-    "juegosDeCompeticionLiga": {
+    "JuegosDeCompeticionLiga": {
       "type": "hasMany",
       "model": "JuegoDeCompeticionLiga",
-      "foreignKey": "AlumnoId",
+      "foreignKey": "alumnoId",
       "options": {
         "nestRemoting": true
       },
       "through": "AlumnoJuegoDeCompeticionLiga"
     },
-    "juegosDeCompeticionFormulaUno": {
+    "JuegosDeCompeticionFormulaUno": {
       "type": "hasMany",
       "model": "JuegoDeCompeticionFormulaUno",
-      "foreignKey": "AlumnoId",
+      "foreignKey": "alumnoId",
       "options": {
         "nestRemoting": true
       },
       "through": "AlumnoJuegoDeCompeticionFormulaUno"
     },
-    "juegosDeCuestionario": {
+    "JuegosDeCuestionario": {
       "type": "hasMany",
       "model": "JuegoDeCuestionario",
       "foreignKey": "alumnoId",
@@ -115,7 +115,7 @@
       },
       "through": "AlumnoJuegoDeCuestionario"
     },
-    "juegoDeAvatars": {
+    "JuegosDeAvatars": {
       "type": "hasMany",
       "model": "JuegoDeAvatar",
       "foreignKey": "alumnoId",
@@ -124,7 +124,7 @@
       },
       "through": "AlumnoJuegoDeAvatar"
     },
-    "juegosDeGeocaching": {
+    "JuegosDeGeocaching": {
       "type": "hasMany",
       "model": "JuegoDeGeocaching",
       "foreignKey": "alumnoId",
@@ -133,7 +133,7 @@
       },
       "through": "AlumnoJuegoDeGeocaching"
     },
-    "juegoDeVotacionUnoATodos": {
+    "JuegosDeVotacionUnoATodos": {
       "type": "hasMany",
       "model": "JuegoDeVotacionUnoATodos",
       "foreignKey": "alumnoId",
@@ -142,7 +142,7 @@
       },
       "through": "AlumnoJuegoDeVotacionUnoATodos"
     },
-    "juegoDeVotacionTodosAUno": {
+    "JuegosDeVotacionTodosAUno": {
       "type": "hasMany",
       "model": "JuegoDeVotacionTodosAUno",
       "foreignKey": "alumnoId",
@@ -151,13 +151,13 @@
       },
       "through": "AlumnoJuegoDeVotacionTodosAUno"
     },
-    "juegoDeCuestionarioSatisfaccion": {
+    "JuegosDeCuestionarioSatisfaccion": {
       "type": "hasMany",
       "model": "JuegoDeCuestionarioSatisfaccion",
       "foreignKey": "alumnoId",
       "through": "AlumnoJuegoDeCuestionarioSatisfaccion"
     },
-    "juegosDeEvaluacion": {
+    "JuegosDeEvaluacion": {
       "type": "hasMany",
       "model": "JuegoDeEvaluacion",
       "foreignKey": "alumnoId",
@@ -166,12 +166,12 @@
       },
       "through": "AlumnoJuegoDeEvaluacion"
     },
-    "libro": {
+    "Libros": {
       "type": "hasMany",
       "model": "Libro",
       "foreignKey": "alumnoId"
     },
-    "juegodelibro": {
+    "JuegosDelibro": {
       "type": "hasMany",
       "model": "juego-de-libro",
       "foreignKey": "alumnoId"

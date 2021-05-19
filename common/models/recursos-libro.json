@@ -1,6 +1,6 @@
 {
-  "name": "recursosLibro",
-  "plural": "recursosLibros",
+  "name": "RecursosLibro",
+  "plural": "RecursosLibro",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

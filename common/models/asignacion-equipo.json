@@ -1,6 +1,6 @@
 {
   "name": "AsignacionEquipo",
-  "plural": "AsignacionEquipos",
+  "plural": "AsignacionesEquipo",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -9,7 +9,7 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "alumno": {
+    "Alumnos": {
       "type": "belongsTo",
       "model": "Alumno",
       "foreignKey": "alumnoId",
@@ -17,7 +17,7 @@
         "nestRemoting": true
       }
     },
-    "equipo": {
+    "Equipos": {
       "type": "belongsTo",
       "model": "Equipo",
       "foreignKey": "equipoId",

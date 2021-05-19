@@ -7,37 +7,37 @@
     "validateUpsert": true
   },
   "properties": {
-    "NombreJuego": {
+    "nombreJuego": {
       "type": "string",
       "required": true
     },
-    "Modalidad": {
+    "modalidad": {
       "type": "string",
       "required": true
     },
-    "PuntuacionCorrecta": {
+    "puntuacionCorrecta": {
       "type": "number",
       "required": true
     },
-    "PuntuacionIncorrecta": {
+    "puntuacionIncorrecta": {
       "type": "number",
       "required": true
     },
-    "TiempoLimite": {
+    "tiempoLimite": {
       "type": "number",
       "required": false,
       "default": 0
     },
-    "Presentacion": {
+    "presentacion": {
       "type": "string",
       "required": true
     },
-    "JuegoActivo": {
+    "juegoActivo": {
       "type": "boolean",
       "required": true,
       "default": false
     },
-    "JuegoTerminado": {
+    "juegoTerminado": {
       "type": "boolean",
       "required": true,
       "default": false
@@ -45,7 +45,7 @@
   },
   "validations": [],
   "relations": {
-    "alumnos": {
+    "Alumnos": {
       "type": "hasMany",
       "model": "Alumno",
       "foreignKey": "juegoDeCuestionarioId",

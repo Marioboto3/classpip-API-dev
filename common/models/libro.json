@@ -1,12 +1,12 @@
 {
   "name": "Libro",
-  "plural": "libro",
+  "plural": "Libros",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
-  "alumnos": {
+  "Alumnos": {
     "type": "belongsTo",
     "model": "Alumno",
     "foreignKey": "libroId",
@@ -64,13 +64,13 @@
   },
   "validations": [],
   "relations": {
-    "escenas": {
+    "Escenas": {
       "type": "hasMany",
       "model": "escena",
       "foreignKey": "libroId",
       "through": ""
     },
-    "juegoldelibro": {
+    "JuegoDeLibro": {
       "type": "belongsTo",
       "model": "juegodelibro",
       "foreignKey": "juegodelibroId",

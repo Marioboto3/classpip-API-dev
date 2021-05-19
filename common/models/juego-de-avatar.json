@@ -1,57 +1,57 @@
 {
   "name": "JuegoDeAvatar",
-  "plural": "juegosDeAvatar",
+  "plural": "JuegosDeAvatar",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "NombreJuego": {
+    "nombreJuego": {
       "type": "string",
       "required": true
     },
-    "Tipo": {
+    "tipo": {
       "type": "string",
       "required": true
     },
-    "Modo": {
+    "modo": {
       "type": "string",
       "required": true
     },
-    "JuegoActivo": {
+    "juegoActivo": {
       "type": "boolean",
       "required": true,
       "default": true
     },
-    "Familias": {
+    "familias": {
       "type": [
         "number"
       ],
       "required": true
     },
-    "CriteriosPrivilegioComplemento1": {
+    "criteriosPrivilegioComplemento1": {
       "type": "string"
     },
-    "CriteriosPrivilegioComplemento2": {
+    "criteriosPrivilegioComplemento2": {
       "type": "string"
     },
-    "CriteriosPrivilegioComplemento3": {
+    "criteriosPrivilegioComplemento3": {
       "type": "string"
     },
-    "CriteriosPrivilegioComplemento4": {
+    "criteriosPrivilegioComplemento4": {
       "type": "string"
     },
-    "CriteriosPrivilegioVoz": {
+    "criteriosPrivilegioVoz": {
       "type": "string"
     },
-    "CriteriosPrivilegioVerTodos": {
+    "criteriosPrivilegioVerTodos": {
       "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "alumnos": {
+    "Alumnos": {
       "type": "hasMany",
       "model": "Alumno",
       "foreignKey": "juegoDeAvatarId",

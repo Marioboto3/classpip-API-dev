@@ -7,14 +7,14 @@
     "validateUpsert": true
   },
   "properties": {
-    "NumeroJornadas": {
+    "numeroJornadas": {
       "type": "number",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "jornadas": {
+    "Jornadas": {
       "type": "hasMany",
       "model": "Jornada",
       "foreignKey": "ligaId"

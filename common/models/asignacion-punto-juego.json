@@ -1,6 +1,6 @@
 {
   "name": "AsignacionPuntoJuego",
-  "plural": "AsignacionPuntosJuego",
+  "plural": "AsignacionesPuntoJuego",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -9,7 +9,7 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "juegoDePuntos": {
+    "JuegoDePuntos": {
       "type": "belongsTo",
       "model": "JuegoDePuntos",
       "foreignKey": "juegoDePuntosId",
@@ -17,7 +17,7 @@
         "nestRemoting": true
       }
     },
-    "punto": {
+    "Puntos": {
       "type": "belongsTo",
       "model": "Punto",
       "foreignKey": "puntoId",

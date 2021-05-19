@@ -7,38 +7,38 @@
     "validateUpsert": true
   },
   "properties": {
-    "NumeroTotalJornadas": {
+    "numeroTotalJornadas": {
       "type": "number",
       "required": true
     },
-    "NombreJuego": {
+    "nombreJuego": {
       "type": "string",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "jornadasDeCompeticionLiga": {
+    "JornadasDeCompeticionLiga": {
       "type": "hasMany",
       "model": "JornadaDeCompeticionLiga",
-      "foreignKey": "JuegoDeCompeticionLigaId",
+      "foreignKey": "juegoDeCompeticionLigaId",
       "options": {
         "nestRemoting": true
       }
     },
-    "alumnos": {
+    "Alumnos": {
       "type": "hasMany",
       "model": "Alumno",
-      "foreignKey": "JuegoDeCompeticionLigaId",
+      "foreignKey": "juegoDeCompeticionLigaId",
       "options": {
         "nestRemoting": true
       },
       "through": "AlumnoJuegoDeCompeticionLiga"
     },
-    "equipos": {
+    "Equipos": {
       "type": "hasMany",
       "model": "Equipo",
-      "foreignKey": "JuegoDeCompeticionLigaId",
+      "foreignKey": "juegoDeCompeticionLigaId",
       "options": {
         "nestRemoting": true
       },

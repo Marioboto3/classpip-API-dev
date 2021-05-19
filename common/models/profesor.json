@@ -7,19 +7,19 @@
     "validateUpsert": true
   },
   "properties": {
-    "Nombre": {
+    "nombre": {
       "type": "string",
       "required": true
     },
-    "PrimerApellido": {
+    "primerApellido": {
       "type": "string",
       "required": true
     },
-    "SegundoApellido": {
+    "segundoApellido": {
       "type": "string",
       "required": true
     },
-    "NombreUsuario": {
+    "nombreUsuario": {
       "type": "string",
       "required": true
     },
@@ -27,77 +27,77 @@
       "type": "string",
       "required": true
     },
-    "Password": {
+    "password": {
       "type": "string",
       "required": true
     },
-    "ImagenPerfil": {
+    "imagenPerfil": {
       "type": "string",
       "required": false
     },
-    "Identificador": {
+    "identificador": {
       "type": "string",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "grupos": {
+    "Grupos": {
       "type": "hasMany",
       "model": "Grupo",
       "foreignKey": "profesorId"
     },
-    "alumnos": {
+    "Alumnos": {
       "type": "hasMany",
       "model": "Alumno",
       "foreignKey": "profesorId"
     },
-    "puntos": {
+    "Puntos": {
       "type": "hasMany",
       "model": "Punto",
       "foreignKey": "profesorId"
     },
-    "reglaManualColeccions": {
+    "ReglasManualColeccion": {
       "type": "hasMany",
       "model": "ReglaManualColeccion",
       "foreignKey": "profesorId"
     },
-    "reglaManualCompeticions": {
+    "ReglasManualCompeticion": {
       "type": "hasMany",
       "model": "ReglaManualCompeticion",
       "foreignKey": "profesorId"
     },
-    "coleccions": {
+    "Colecciones": {
       "type": "hasMany",
       "model": "Coleccion",
       "foreignKey": "profesorId"
     },
-    "insignia": {
+    "Insignias": {
       "type": "hasMany",
       "model": "Insignia",
       "foreignKey": "profesorId"
     },
-    "preguntas": {
+    "Preguntas": {
       "type": "hasMany",
       "model": "Pregunta",
       "foreignKey": "profesorId"
     },
-    "cuestionarios": {
+    "Cuestionarios": {
       "type": "hasMany",
       "model": "Cuestionario",
       "foreignKey": "profesorId"
     },
-    "escenarios": {
+    "Escenarios": {
       "type": "hasMany",
       "model": "Escenario",
       "foreignKey": "profesorId"
     },
-    "juegosDeCuestionario": {
+    "JuegosDeCuestionario": {
       "type": "hasMany",
       "model": "JuegoDeCuestionario",
       "foreignKey": "profesorId"
     },
-    "familiaAvatares": {
+    "FamiliaAvatares": {
       "type": "hasMany",
       "model": "FamiliaAvatares",
       "foreignKey": "profesorId"
@@ -107,7 +107,7 @@
       "model": "JuegoDeGeocaching",
       "foreignKey": "profesorId"
     },
-    "rubricas": {
+    "Rubricas": {
       "type": "hasMany",
       "model": "Rubrica",
       "foreignKey": "profesorId",
@@ -115,47 +115,47 @@
         "nestRemoting": true
       }
     },
-    "familiasImagenesDePerfil": {
+    "FamiliasImagenesDePerfil": {
       "type": "hasMany",
       "model": "FamiliaImagenesPerfil",
       "foreignKey": "profesorId"
     },
-    "cuestionariosSatisfaccion": {
+    "CuestionariosSatisfaccion": {
       "type": "hasMany",
       "model": "CuestionarioSatisfaccion",
       "foreignKey": "profesorId"
     },
-    "juegosDeEncuestaRapida": {
+    "JuegosDeEncuestaRapida": {
       "type": "hasMany",
       "model": "JuegoDeEncuestaRapida",
       "foreignKey": "profesorId"
     },
-    "juegosDeVotacionRapida": {
+    "JuegosDeVotacionRapida": {
       "type": "hasMany",
       "model": "JuegoDeVotacionRapida",
       "foreignKey": "profesorId"
     },
-    "juegosDeCuestionarioRapido": {
+    "JuegosDeCuestionarioRapido": {
       "type": "hasMany",
       "model": "JuegoDeCuestionarioRapido",
       "foreignKey": "profesorId"
     },
-    "juegosDeCogerTurnoRapido": {
+    "JuegosDeCogerTurnoRapido": {
       "type": "hasMany",
       "model": "JuegoDeCogerTurnoRapido",
       "foreignKey": "profesorId"
     },
-    "juegosDePuntos": {
+    "JuegosDePuntos": {
       "type": "hasMany",
       "model": "JuegoDePuntos",
       "foreignKey": "profesorId"
     },
-    "juegosDeEvaluacion": {
+    "JuegosDeEvaluacion": {
       "type": "hasMany",
       "model": "JuegoDeEvaluacion",
       "foreignKey": "profesorId"
     },
-    "recursosLibros": {
+    "RecursosLibros": {
       "type": "hasMany",
       "model": "recursosLibro",
       "foreignKey": "profesorId"

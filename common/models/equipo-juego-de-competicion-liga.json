@@ -7,7 +7,7 @@
     "validateUpsert": true
   },
   "properties": {
-    "PuntosTotalesEquipo": {
+    "puntosTotalesEquipo": {
       "type": "number",
       "required": true,
       "default": 0
@@ -15,18 +15,18 @@
   },
   "validations": [],
   "relations": {
-    "equipo": {
+    "Equipos": {
       "type": "belongsTo",
       "model": "Equipo",
-      "foreignKey": "EquipoId",
+      "foreignKey": "equipoId",
       "options": {
         "nestRemoting": true
       }
     },
-    "juegoDeCompeticionLiga": {
+    "JuegosDeCompeticionLiga": {
       "type": "belongsTo",
       "model": "JuegoDeCompeticionLiga",
-      "foreignKey": "JuegoDeCompeticionLigaId",
+      "foreignKey": "juegoDeCompeticionLigaId",
       "options": {
         "nestRemoting": true
       }

@@ -1,31 +1,31 @@
 {
   "name": "JuegoDeCogerTurnoRapido",
-  "plural": "juegosDeCogerTurnoRapido",
+  "plural": "JuegosDeCogerTurnoRapido",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "NombreJuego": {
+    "nombreJuego": {
       "type": "string",
       "required": true
     },
-    "Tipo": {
+    "tipo": {
       "type": "string",
       "required": true
     },
-    "Presentacion": {
+    "presentacion": {
       "type": "string",
       "required": true
     },
-    "Turnos": {
+    "turnos": {
       "type": [
         "object"
       ],
       "required": true
     },
-    "Clave": {
+    "clave": {
       "type": "string",
       "required": true
     }

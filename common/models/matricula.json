@@ -9,7 +9,7 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "alumno": {
+    "Alumnos": {
       "type": "belongsTo",
       "model": "Alumno",
       "foreignKey": "alumnoId",
@@ -17,7 +17,7 @@
         "nestRemoting": true
       }
     },
-    "grupo": {
+    "Grupos": {
       "type": "belongsTo",
       "model": "Grupo",
       "foreignKey": "grupoId",
@@ -25,7 +25,7 @@
         "nestRemoting": true
       }
     },
-    "sesionClases": {
+    "SesionesClase": {
       "type": "hasMany",
       "model": "SesionClase",
       "foreignKey": "matriculaId",

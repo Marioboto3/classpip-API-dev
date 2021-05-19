@@ -7,7 +7,7 @@
     "validateUpsert": true
   },
   "properties": {
-    "Mapa": {
+    "Kapa": {
       "type": "string",
       "required": true
     },
@@ -18,7 +18,7 @@
   },
   "validations": [],
   "relations": {
-    "puntosgeolocalizables": {
+    "Puntosgeolocalizables": {
       "type": "hasMany",
       "model": "PuntoGeolocalizable",
       "foreignKey": "idescenario"

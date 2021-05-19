@@ -1,31 +1,31 @@
 {
   "name": "JuegoDeCuestionarioSatisfaccion",
-  "plural": "juegosDeCuestionarioSatisfaccion",
+  "plural": "JuegosDeCuestionarioSatisfaccion",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "NombreJuego": {
+    "nombreJuego": {
       "type": "string",
       "required": true
     },
-    "Presentacion": {
+    "presentacion": {
       "type": "string"
     },
-    "JuegoActivo": {
+    "juegoActivo": {
       "type": "boolean",
       "required": true
     },
-    "JuegoTerminado": {
+    "juegoTerminado": {
       "type": "boolean",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "alumnos": {
+    "Alumnos": {
       "type": "hasMany",
       "model": "Alumno",
       "foreignKey": "juegoDeCuestionarioSatisfaccionId",

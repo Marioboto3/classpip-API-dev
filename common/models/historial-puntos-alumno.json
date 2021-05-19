@@ -7,18 +7,18 @@
     "validateUpsert": true
   },
   "properties": {
-    "ValorPunto": {
+    "valorPunto": {
       "type": "number",
       "required": true
     },
-    "Fecha": {
+    "fecha": {
       "type": "string",
       "required": false
     }
   },
   "validations": [],
   "relations": {
-    "punto": {
+    "Puntos": {
       "type": "belongsTo",
       "model": "Punto",
       "foreignKey": "puntoId",
@@ -26,7 +26,7 @@
         "nestRemoting": true
       }
     },
-    "alumnoJuegoDePuntos": {
+    "AlumnosJuegoDePuntos": {
       "type": "belongsTo",
       "model": "AlumnoJuegoDePuntos",
       "foreignKey": "alumnoJuegoDePuntosId",

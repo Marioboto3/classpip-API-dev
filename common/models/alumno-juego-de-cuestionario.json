@@ -7,15 +7,15 @@
     "validateUpsert": true
   },
   "properties": {
-    "Nota": {
+    "nota": {
       "type": "number",
       "required": true
     },
-    "Contestado": {
+    "contestado": {
       "type": "boolean",
       "default": false
     },
-    "TiempoEmpleado": {
+    "tiempoEmpleado": {
       "type": "number",
       "required": false,
       "default": 0
@@ -23,7 +23,7 @@
   },
   "validations": [],
   "relations": {
-    "alumno": {
+    "Alumnos": {
       "type": "belongsTo",
       "model": "Alumno",
       "foreignKey": "alumnoId",
@@ -31,7 +31,7 @@
         "nestRemoting": true
       }
     },
-    "juegoDeCuestionario": {
+    "JuegosDeCuestionario": {
       "type": "belongsTo",
       "model": "JuegoDeCuestionario",
       "foreignKey": "juegoDeCuestionarioId",
@@ -39,7 +39,7 @@
         "nestRemoting": true
       }
     },
-    "pregunta": {
+    "Preguntas": {
       "type": "hasMany",
       "model": "Pregunta",
       "foreignKey": "alumnoJuegoDeCuestionarioId",

@@ -7,15 +7,15 @@
     "validateUpsert": true
   },
   "properties": {
-    "JugadorUno": {
+    "jugadorUno": {
       "type": "number",
       "required": true
     },
-    "JugadorDos": {
+    "jugadorDos": {
       "type": "number",
       "required": true
     },
-    "Ganador": {
+    "ganador": {
       "type": "number",
       "required": false
     }

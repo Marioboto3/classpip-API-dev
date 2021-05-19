@@ -1,6 +1,6 @@
 {
   "name": "EquipoJuegoDeVotacionUnoATodos",
-  "plural": "equiposJuegoDeVotacionUnoATodos",
+  "plural": "EquiposJuegoDeVotacionUnoATodos",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -19,7 +19,7 @@
   },
   "validations": [],
   "relations": {
-    "equipo": {
+    "Equipos": {
       "type": "belongsTo",
       "model": "Equipo",
       "foreignKey": "equipoId",
@@ -27,7 +27,7 @@
         "nestRemoting": true
       }
     },
-    "juegoDeVotacionUnoATodos": {
+    "JuegosDeVotacionUnoATodos": {
       "type": "belongsTo",
       "model": "JuegoDeVotacionUnoATodos",
       "foreignKey": "juegoDeVotacionUnoATodosId",

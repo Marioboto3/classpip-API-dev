@@ -1,6 +1,6 @@
 {
-  "name": "escena",
-  "plural": "escenas",
+  "name": "Escena",
+  "plural": "Escenas",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -42,10 +42,10 @@
   },
   "validations": [],
   "relations": {
-    "frames": {
+    "Frames": {
       "type": "hasMany",
       "model": "frame",
-      "foreignKey": "escenaid",
+      "foreignKey": "escenaId",
       "options": {
         "nestRemoting": true
       }

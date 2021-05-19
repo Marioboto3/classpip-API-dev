@@ -1,7 +1,7 @@
 {
-  "name": "imagen",
-  "plural": "imagenes",
-  "base": "Model",
+  "name": "Imagen",
+  "plural": "Imagenes",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true

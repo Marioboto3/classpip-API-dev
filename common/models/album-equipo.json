@@ -1,19 +1,19 @@
 {
   "name": "AlbumEquipo",
-  "plural": "albumsEquipo",
+  "plural": "AlbumesEquipo",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "Fecha": {
+    "fecha": {
       "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "cromo": {
+    "Cromos": {
       "type": "belongsTo",
       "model": "Cromo",
       "foreignKey": "cromoId",
@@ -21,7 +21,7 @@
         "nestRemoting": true
       }
     },
-    "equipoJuegoDeColeccion": {
+    "EquiposJuegoDeColeccion": {
       "type": "belongsTo",
       "model": "EquipoJuegoDeColeccion",
       "foreignKey": "equipoJuegoDeColeccionId",

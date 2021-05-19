@@ -9,7 +9,7 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "alumno": {
+    "Alumnos": {
       "type": "belongsTo",
       "model": "Alumno",
       "foreignKey": "alumnoId",
@@ -17,7 +17,7 @@
         "nestRemoting": true
       }
     },
-    "juegoDeColeccion": {
+    "JuegosDeColeccion": {
       "type": "belongsTo",
       "model": "JuegoDeColeccion",
       "foreignKey": "juegoDeColeccionId",
@@ -25,7 +25,7 @@
         "nestRemoting": true
       }
     },
-    "cromos": {
+    "Cromos": {
       "type": "hasMany",
       "model": "Cromo",
       "foreignKey": "alumnoJuegoDeColeccionId",

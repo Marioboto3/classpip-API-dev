@@ -1,6 +1,6 @@
 {
   "name": "EquipoJuegoDeEvaluacion",
-  "plural": "equiposJuegoDeEvaluacion",
+  "plural": "EquiposJuegoDeEvaluacion",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -36,7 +36,7 @@
   },
   "validations": [],
   "relations": {
-    "equipo": {
+    "Equipo": {
       "type": "belongsTo",
       "model": "Equipo",
       "foreignKey": "equipoId",
@@ -44,7 +44,7 @@
         "nestRemoting": true
       }
     },
-    "juegoDeEvaluacion": {
+    "JuegoDeEvaluacion": {
       "type": "belongsTo",
       "model": "JuegoDeEvaluacion",
       "foreignKey": "juegoDeEvaluacionId",

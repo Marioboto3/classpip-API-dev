@@ -1,6 +1,6 @@
 {
-  "name": "juegoLibroConcurso",
-  "plural": "juegoLibroConcursos",
+  "name": "JuegoLibroConcurso",
+  "plural": "JuegosLibroConcurso",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
