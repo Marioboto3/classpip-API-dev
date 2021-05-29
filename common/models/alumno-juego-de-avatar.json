@@ -1,6 +1,6 @@
 {
   "name": "AlumnoJuegoDeAvatar",
-  "plural": "AlumnosJuegoAvatar",
+  "plural": "AlumnosJuegoDeAvatar",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

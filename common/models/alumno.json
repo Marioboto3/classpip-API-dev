@@ -79,7 +79,7 @@
       },
       "through": "AlumnoJuegoDeEscapeRoom"
     },
-    "JuegosDeColeccions": {
+    "JuegosDeColeccion": {
       "type": "hasMany",
       "model": "JuegoDeColeccion",
       "foreignKey": "alumnoId",
@@ -115,7 +115,7 @@
       },
       "through": "AlumnoJuegoDeCuestionario"
     },
-    "JuegosDeAvatars": {
+    "JuegosDeAvatar": {
       "type": "hasMany",
       "model": "JuegoDeAvatar",
       "foreignKey": "alumnoId",
