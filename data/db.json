@@ -71,8 +71,8 @@
     "escena": 1,
     "frame": 1,
     "EquipoJuegoDeVotacionUnoATodos": 1,
-    "JuegoDeEscapeRoom": 4,
-    "AlumnoJuegoDeEscapeRoom": 4
+    "JuegoDeEscapeRoom": 2,
+    "AlumnoJuegoDeEscapeRoom": 2
   },
   "models": {
     "Profesor": {
@@ -82,9 +82,7 @@
       "1": "{\"nombre\":\"Mario alumno\",\"primerApellido\":\"Sanchez\",\"segundoApellido\":\"Boto\",\"imagenPerfil\":null,\"permisoCambioImagenPerfil\":false,\"username\":\"Mario alumno\",\"email\":\"mario@gmail.com\",\"password\":\"test\",\"profesorId\":1,\"id\":1}"
     },
     "Grupo": {
-      "1": "{\"nombre\":\"Test group\",\"descripcion\":\"First\",\"profesorId\":1,\"id\":1}",
-      "2": "{\"nombre\":\"Test\",\"descripcion\":\"Group\",\"profesorId\":1,\"id\":2}",
-      "3": "{\"nombre\":\"Test\",\"descripcion\":\"Group\",\"profesorId\":1,\"id\":3}"
+      "1": "{\"nombre\":\"Test group\",\"descripcion\":\"First\",\"profesorId\":1,\"id\":1}"
     },
     "Punto": {},
     "Coleccion": {},
@@ -93,7 +91,7 @@
     "JuegoDePuntos": {},
     "JuegoDeColeccion": {},
     "Matricula": {
-      "1": "{\"alumnoId\":1,\"grupoId\":3,\"id\":1}"
+      "1": "{\"alumnoId\":1,\"grupoId\":1,\"id\":1}"
     },
     "AsignacionEquipo": {},
     "AsignacionPuntoJuego": {},
@@ -156,14 +154,10 @@
     "frame": {},
     "EquipoJuegoDeVotacionUnoATodos": {},
     "JuegoDeEscapeRoom": {
-      "1": "{\"id\":1,\"grupoId\":3,\"nombreJuego\":\"Primer juego escape\",\"escenario\":{\"mapa\":\"Habitación\",\"descripcion\":\"test\"},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true}",
-      "2": "{\"grupoId\":3,\"nombreJuego\":\"aa\",\"escenario\":{\"mapa\":\"Cocina\",\"descripcion\":\"test\"},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":false,\"id\":2}",
-      "3": "{\"grupoId\":3,\"nombreJuego\":\"AA\",\"escenario\":{\"mapa\":\"Baño\",\"descripcion\":\"test\"},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":false,\"id\":3}"
+      "1": "{\"id\":1,\"grupoId\":1,\"nombreJuego\":\"Test escape\",\"escenario\":{\"mapa\":\"imagenBase\",\"descripcion\":\"test\",\"objeto1\":{\"nombre\":\"botella\",\"usable\":true,\"recogido\":false,\"posicion\":\"objeto1\"},\"objeto2\":{\"nombre\":\"vasoDeAgua\",\"usable\":false,\"recogido\":false,\"posicion\":\"objeto2\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[],\"idJuegoDeEscapeRoom\":1}}"
     },
     "AlumnoJuegoDeEscapeRoom": {
-      "1": "{\"id\":1,\"personaje\":\"Elvis Tek\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":1}",
-      "2": "{\"personaje\":\"moreno\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":2,\"id\":2}",
-      "3": "{\"personaje\":\"moreno\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":3,\"id\":3}"
+      "1": "{\"id\":1,\"personaje\":\"Elvis Tek\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":1}"
     }
   }
 }
