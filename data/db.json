@@ -71,8 +71,8 @@
     "escena": 1,
     "frame": 1,
     "EquipoJuegoDeVotacionUnoATodos": 1,
-    "JuegoDeEscapeRoom": 2,
-    "AlumnoJuegoDeEscapeRoom": 2
+    "JuegoDeEscapeRoom": 3,
+    "AlumnoJuegoDeEscapeRoom": 3
   },
   "models": {
     "Profesor": {
@@ -154,10 +154,12 @@
     "frame": {},
     "EquipoJuegoDeVotacionUnoATodos": {},
     "JuegoDeEscapeRoom": {
-      "1": "{\"id\":1,\"grupoId\":1,\"nombreJuego\":\"Test escape\",\"escenario\":{\"mapa\":\"imagenBase\",\"descripcion\":\"test\",\"objeto1\":{\"nombre\":\"botella\",\"usable\":true,\"recogido\":false,\"posicion\":\"objeto1\"},\"objeto2\":{\"nombre\":\"vasoDeAgua\",\"usable\":false,\"recogido\":false,\"posicion\":\"objeto2\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[],\"idJuegoDeEscapeRoom\":1}}"
+      "1": "{\"id\":1,\"grupoId\":1,\"nombreJuego\":\"Test escape\",\"escenario\":{\"mapa\":\"imagenBase\",\"descripcion\":\"test\",\"objeto1\":{\"nombre\":\"botella\",\"usable\":true,\"recogido\":false,\"posicion\":\"objeto1\"},\"objeto2\":{\"nombre\":\"vasoDeAgua\",\"usable\":false,\"recogido\":false,\"posicion\":\"objeto2\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[],\"idJuegoDeEscapeRoom\":1}}",
+      "2": "{\"id\":2,\"grupoId\":1,\"nombreJuego\":\"Test enigma\",\"escenario\":{\"mapa\":\"imagenBase\",\"descripcion\":\"test\",\"objeto1\":{\"nombre\":\"botella\",\"usable\":true,\"recogido\":false,\"posicion\":\"objeto1\"},\"objeto2\":{\"nombre\":\"vasoDeAgua\",\"usable\":false,\"recogido\":false,\"posicion\":\"objeto2\"},\"objetoEnigma\":{\"nombre\":\"cajaFuerte\",\"pregunta\":\"2+2\",\"respuesta\":\"4\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[],\"idJuegoDeEscapeRoom\":2}}"
     },
     "AlumnoJuegoDeEscapeRoom": {
-      "1": "{\"id\":1,\"personaje\":\"Elvis Tek\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":1}"
+      "1": "{\"id\":1,\"personaje\":\"Elvis Tek\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":1}",
+      "2": "{\"id\":2,\"personaje\":\"Conpa Tatas\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":2}"
     }
   }
 }
