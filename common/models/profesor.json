@@ -92,6 +92,11 @@
       "model": "Escenario",
       "foreignKey": "profesorId"
     },
+    "EscenariosEscapeRoom": {
+      "type": "hasMany",
+      "model": "EscenarioEscapeRoom",
+      "foreignKey": "profesorId"
+    },
     "JuegosDeCuestionario": {
       "type": "hasMany",
       "model": "JuegoDeCuestionario",

@@ -374,5 +374,9 @@
   "AlumnoJuegoDeEscapeRoom": {
     "dataSource": "baseDatos",
     "public": true
+  },
+  "EscenarioEscapeRoom": {
+    "dataSource": "baseDatos",
+    "public": true
   }
 }

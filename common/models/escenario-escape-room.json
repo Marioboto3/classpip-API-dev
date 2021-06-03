@@ -1,0 +1,48 @@
+{
+  "name": "EscenarioEscapeRoom",
+  "plural": "EscenariosEscapeRoom",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "mapa": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "string",
+      "required": true
+    },
+    "profesorId": {
+      "type": "number",
+      "required": true
+    },
+    "objeto1": {
+      "type": "object",
+      "required": true
+    },
+    "objeto2": {
+      "type": "object",
+      "required": true
+    },
+    "objetoEnigma": {
+      "type": "object",
+      "required": true
+    },
+    "objetoPista": {
+      "type": "object",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": { 
+    "JuegosDeEscapeRoom": {
+      "type": "hasMany",
+      "model": "JuegoDeEscapeRoom",
+      "foreignKey": "idEscenario"
+  }},
+  "acls": [],
+  "methods": {}
+}

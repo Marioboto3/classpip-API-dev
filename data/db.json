@@ -31,7 +31,7 @@
     "JornadaDeCompeticionFormulaUno": 1,
     "AlumnoJuegoDeCompeticionFormulaUno": 1,
     "EquipoJuegoDeCompeticionFormulaUno": 1,
-    "Escenario": 1,
+    "Escenario": 2,
     "PuntoGeolocalizable": 1,
     "Cuestionario": 1,
     "PreguntaDelCuestionario": 1,
@@ -72,7 +72,8 @@
     "frame": 1,
     "EquipoJuegoDeVotacionUnoATodos": 1,
     "JuegoDeEscapeRoom": 3,
-    "AlumnoJuegoDeEscapeRoom": 3
+    "AlumnoJuegoDeEscapeRoom": 3,
+    "EscenarioEscapeRoom": 3
   },
   "models": {
     "Profesor": {
@@ -117,7 +118,9 @@
     "Pregunta": {},
     "Cuestionario": {},
     "PreguntaDelCuestionario": {},
-    "Escenario": {},
+    "Escenario": {
+      "1": "{\"mapa\":\"m\",\"descripcion\":\"m\",\"profesorId\":1,\"id\":1}"
+    },
     "PuntoGeolocalizable": {},
     "SesionClase": {},
     "FamiliaAvatares": {},
@@ -154,12 +157,16 @@
     "frame": {},
     "EquipoJuegoDeVotacionUnoATodos": {},
     "JuegoDeEscapeRoom": {
-      "1": "{\"id\":1,\"grupoId\":1,\"nombreJuego\":\"Test escape\",\"escenario\":{\"mapa\":\"imagenBase\",\"descripcion\":\"test\",\"objeto1\":{\"nombre\":\"botella\",\"usable\":true,\"recogido\":false,\"posicion\":\"objeto1\"},\"objeto2\":{\"nombre\":\"vasoDeAgua\",\"usable\":false,\"recogido\":false,\"posicion\":\"objeto2\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[],\"idJuegoDeEscapeRoom\":1}}",
-      "2": "{\"id\":2,\"grupoId\":1,\"nombreJuego\":\"Test enigma\",\"escenario\":{\"mapa\":\"imagenBase\",\"descripcion\":\"test\",\"objeto1\":{\"nombre\":\"botella\",\"usable\":true,\"recogido\":false,\"posicion\":\"objeto1\"},\"objeto2\":{\"nombre\":\"vasoDeAgua\",\"usable\":false,\"recogido\":false,\"posicion\":\"objeto2\"},\"objetoEnigma\":{\"nombre\":\"cajaFuerte\",\"pregunta\":\"2+2\",\"respuesta\":\"4\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[],\"idJuegoDeEscapeRoom\":2}}"
+      "1": "{\"id\":1,\"grupoId\":1,\"nombreJuego\":\"Test escape\",\"escenario\":{\"mapa\":\"imagenBase\",\"descripcion\":\"test\",\"objeto1\":{\"nombre\":\"botella\",\"usable\":true,\"recogido\":true,\"posicion\":\"objeto1\"},\"objeto2\":{\"nombre\":\"vasoDeAgua\",\"usable\":true,\"recogido\":false,\"posicion\":\"objeto2\"},\"objetoEnigma\":{\"nombre\":\"cajaFuerte\",\"pregunta\":\"1+1\",\"respuesta\":\"2\",\"resuelta\":true},\"objetoPista\":{\"nombre\":\"llave\",\"usable\":true,\"recogido\":true,\"posicion\":\"objetoPista\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[{\"nombre\":\"llave\",\"usable\":true,\"recogido\":false,\"posicion\":\"objetoPista\"},{\"nombre\":\"botella\",\"usable\":true,\"recogido\":false,\"posicion\":\"objeto1\"}],\"idJuegoDeEscapeRoom\":1}}",
+      "2": "{\"id\":2,\"grupoId\":1,\"nombreJuego\":\"Test escape con escenario nuevo\",\"escenario\":{\"mapa\":\"Mapa test\",\"descripcion\":\"Primera prueba a realizar con escenario escape room\",\"profesorId\":1,\"objeto1\":{\"nombre\":\"botella\",\"usable\":true,\"recogido\":true,\"posicion\":\"objeto1\"},\"objeto2\":{\"nombre\":\"vasoDeAgua\",\"usable\":true,\"recogido\":false,\"posicion\":\"objeto2\"},\"objetoEnigma\":{\"nombre\":\"cajaFuerte\",\"pregunta\":\"1+1\",\"respuesta\":\"2\",\"resuelta\":false},\"objetoPista\":{\"nombre\":\"llave\",\"usable\":true,\"recogido\":false,\"posicion\":\"objetoPista\"},\"id\":1},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[{\"nombre\":\"botella\",\"usable\":true,\"recogido\":false,\"posicion\":\"objeto1\"}],\"idJuegoDeEscapeRoom\":2},\"idEscenario\":1}"
     },
     "AlumnoJuegoDeEscapeRoom": {
       "1": "{\"id\":1,\"personaje\":\"Elvis Tek\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":1}",
-      "2": "{\"id\":2,\"personaje\":\"Conpa Tatas\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":2}"
+      "2": "{\"id\":2,\"personaje\":\"Elvis Tek\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":2}"
+    },
+    "EscenarioEscapeRoom": {
+      "1": "{\"mapa\":\"Mapa test\",\"descripcion\":\"Primera prueba a realizar con escenario escape room\",\"profesorId\":1,\"objeto1\":{\"nombre\":\"botella\",\"usable\":true,\"recogido\":false,\"posicion\":\"objeto1\"},\"objeto2\":{\"nombre\":\"vasoDeAgua\",\"usable\":true,\"recogido\":false,\"posicion\":\"objeto2\"},\"objetoEnigma\":{\"nombre\":\"cajaFuerte\",\"pregunta\":\"1+1\",\"respuesta\":\"2\",\"resuelta\":false},\"objetoPista\":{\"nombre\":\"llave\",\"usable\":true,\"recogido\":false,\"posicion\":\"objetoPista\"},\"id\":1}",
+      "2": "{\"mapa\":\"Segundo escenario test\",\"descripcion\":\"Es el mismo escenario pero con distinto nombre\",\"profesorId\":1,\"objeto1\":{\"nombre\":\"botella\",\"usable\":false,\"recogido\":true,\"posicion\":\"objeto1\"},\"objeto2\":{\"nombre\":\"vasoDeAgua\",\"usable\":false,\"recogido\":true,\"posicion\":\"objeto2\"},\"objetoEnigma\":{\"nombre\":\"cajaFuerte\",\"pregunta\":\"1+1\",\"respuesta\":\"2\",\"resuelta\":false},\"objetoPista\":{\"nombre\":\"llave\",\"usable\":false,\"recogido\":true,\"posicion\":\"objetoPista\"},\"id\":2}"
     }
   }
 }

@@ -64,7 +64,7 @@
     "Preguntas": {
       "type": "hasMany",
       "model": "Pregunta",
-      "foreignKey": "JuegoDeGeocachingId",
+      "foreignKey": "juegoDeGeocachingId",
       "options": {
         "nestRemoting": true
       },
