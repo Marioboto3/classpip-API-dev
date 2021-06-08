@@ -1,35 +1,36 @@
 {
-  "name": "EscenarioEscapeRoom",
-  "plural": "EscenariosEscapeRoom",
+  "name": "ObjetoEnigma",
+  "plural": "ObjetosEnigma",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "mapa": {
+    "nombre": {
       "type": "string",
       "required": true
     },
-    "descripcion": {
+    "pregunta": {
       "type": "string",
       "required": true
     },
-    "profesorId": {
-      "type": "number",
+    "respuesta": {
+      "type": "string",
       "required": true
     },
-    "objetos": {
-      "type": "any",
-      "required": true
+    "resuelta": {
+      "type": "boolean",
+      "required": true,
+      "default": false
     }
   },
   "validations": [],
   "relations": {
-    "JuegosDeEscapeRoom": {
-      "type": "hasMany",
-      "model": "JuegoDeEscapeRoom",
-      "foreignKey": "idEscenario"
+    "ObjetosGlobal": {
+      "type": "belongsTo",
+      "model": "ObjetoGlobalEscape",
+      "foreignKey": "objetoId"
     }
   },
   "acls": [],

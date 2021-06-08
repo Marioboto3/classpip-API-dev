@@ -378,5 +378,17 @@
   "EscenarioEscapeRoom": {
     "dataSource": "baseDatos",
     "public": true
+  },
+  "ObjetoEscape": {
+    "dataSource": "baseDatos",
+    "public": true
+  },
+  "ObjetoEnigma": {
+    "dataSource": "baseDatos",
+    "public": true
+  },
+  "ObjetoGlobalEscape": {
+    "dataSource": "baseDatos",
+    "public": true
   }
 }

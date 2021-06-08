@@ -97,6 +97,21 @@
       "model": "EscenarioEscapeRoom",
       "foreignKey": "profesorId"
     },
+    "ObjetosEnigma": {
+      "type": "hasMany",
+      "model": "ObjetoEnigma",
+      "foreignKey": "profesorId"
+    },
+    "ObjetosEscape": {
+      "type": "hasMany",
+      "model": "ObjetoEscape",
+      "foreignKey": "profesorId"
+    },
+    "ObjetosGlobalEscape": {
+      "type": "hasMany",
+      "model": "ObjetoGlobalEscape",
+      "foreignKey": "profesorId"
+    },
     "JuegosDeCuestionario": {
       "type": "hasMany",
       "model": "JuegoDeCuestionario",

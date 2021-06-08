@@ -1,0 +1,39 @@
+{
+  "name": "ObjetoEscape",
+  "plural": "ObjetosEscape",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "usable": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "recogido": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "posicion": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "ObjetosGlobal": {
+      "type": "belongsTo",
+      "model": "ObjetoGlobalEscape",
+      "foreignKey": "objetoId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

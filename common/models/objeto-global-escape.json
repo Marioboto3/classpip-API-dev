@@ -1,36 +1,27 @@
 {
-  "name": "EscenarioEscapeRoom",
-  "plural": "EscenariosEscapeRoom",
+  "name": "ObjetoGlobalEscape",
+  "plural": "ObjetosGlobalEscape",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "mapa": {
+    "nombre": {
       "type": "string",
       "required": true
     },
-    "descripcion": {
+    "tipoDeObjeto": {
       "type": "string",
       "required": true
     },
-    "profesorId": {
+    "posicion": {
       "type": "number",
-      "required": true
-    },
-    "objetos": {
-      "type": "any",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "JuegosDeEscapeRoom": {
-      "type": "hasMany",
-      "model": "JuegoDeEscapeRoom",
-      "foreignKey": "idEscenario"
-    }
   },
   "acls": [],
   "methods": {}
