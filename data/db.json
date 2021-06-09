@@ -71,12 +71,12 @@
     "escena": 1,
     "frame": 1,
     "EquipoJuegoDeVotacionUnoATodos": 1,
-    "JuegoDeEscapeRoom": 6,
-    "AlumnoJuegoDeEscapeRoom": 6,
-    "EscenarioEscapeRoom": 9,
-    "ObjetoEscape": 3,
-    "ObjetoEnigma": 2,
-    "ObjetoGlobalEscape": 4
+    "JuegoDeEscapeRoom": 3,
+    "AlumnoJuegoDeEscapeRoom": 3,
+    "EscenarioEscapeRoom": 3,
+    "ObjetoEscape": 5,
+    "ObjetoEnigma": 3,
+    "ObjetoGlobalEscape": 7
   },
   "models": {
     "Profesor": {
@@ -160,28 +160,34 @@
     "frame": {},
     "EquipoJuegoDeVotacionUnoATodos": {},
     "JuegoDeEscapeRoom": {
-      "4": "{\"id\":4,\"grupoId\":1,\"nombreJuego\":\"Este si que si\",\"escenario\":{\"mapa\":\"Cocinetix\",\"descripcion\":\"Escenario bien creado\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"id\":1,\"profesorId\":1},{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":2,\"id\":3,\"profesorId\":1}],\"id\":7,\"imagen\":{\"nombre\":\"cocina\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[],\"idJuegoDeEscapeRoom\":4},\"idEscenario\":7}",
-      "5": "{\"id\":5,\"grupoId\":1,\"nombreJuego\":\"LAST GAME\",\"escenario\":{\"mapa\":\"Last escenario\",\"descripcion\":\"TT\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"id\":2,\"profesorId\":1},{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":2,\"id\":3,\"profesorId\":1}],\"id\":8,\"imagen\":{\"nombre\":\"habitacion\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[],\"idJuegoDeEscapeRoom\":5},\"idEscenario\":8}"
+      "1": "{\"id\":1,\"grupoId\":1,\"nombreJuego\":\"Test juego\",\"escenario\":{\"mapa\":\"g\",\"descripcion\":\"g\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":2,\"id\":1,\"profesorId\":1},{\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":3,\"id\":2,\"profesorId\":1},{\"nombre\":\"vasoDeAgua\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"id\":3,\"profesorId\":1},{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":5,\"id\":5,\"profesorId\":1},{\"nombre\":\"cuadro\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":4,\"id\":6,\"profesorId\":1}],\"id\":1,\"imagen\":{\"nombre\":\"habitacion\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[],\"idJuegoDeEscapeRoom\":1},\"idEscenario\":1}",
+      "2": "{\"id\":2,\"grupoId\":1,\"nombreJuego\":\"Segundo test escenario\",\"escenario\":{\"mapa\":\"tw\",\"descripcion\":\"tw\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":3,\"id\":1,\"profesorId\":1},{\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"id\":2,\"profesorId\":1},{\"nombre\":\"vasoDeAgua\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":2,\"id\":3,\"profesorId\":1},{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":4,\"id\":5,\"profesorId\":1},{\"nombre\":\"cuadro\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":5,\"id\":6,\"profesorId\":1}],\"id\":2,\"imagen\":{\"nombre\":\"cocina\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[{\"nombre\":\"llave\",\"usable\":true,\"recogido\":true}],\"idJuegoDeEscapeRoom\":2},\"idEscenario\":2}"
     },
     "AlumnoJuegoDeEscapeRoom": {
-      "4": "{\"id\":4,\"personaje\":\"Elvis Tek\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":4}",
-      "5": "{\"id\":5,\"personaje\":\"Elvis Tek\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":5}"
+      "1": "{\"id\":1,\"personaje\":\"Elvis Tek\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":1}",
+      "2": "{\"id\":2,\"personaje\":\"Conpa Tatas\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":2}"
     },
     "EscenarioEscapeRoom": {
-      "7": "{\"mapa\":\"Cocinetix\",\"descripcion\":\"Escenario bien creado\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"id\":1,\"profesorId\":1},{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":2,\"id\":3,\"profesorId\":1}],\"imagen\":{\"nombre\":\"cocina\"},\"id\":7}",
-      "8": "{\"mapa\":\"Last escenario\",\"descripcion\":\"TT\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"id\":2,\"profesorId\":1},{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":2,\"id\":3,\"profesorId\":1}],\"imagen\":{\"nombre\":\"habitacion\"},\"id\":8}"
+      "1": "{\"mapa\":\"g\",\"descripcion\":\"g\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":2,\"id\":1,\"profesorId\":1},{\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":3,\"id\":2,\"profesorId\":1},{\"nombre\":\"vasoDeAgua\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"id\":3,\"profesorId\":1},{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":5,\"id\":5,\"profesorId\":1},{\"nombre\":\"cuadro\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":4,\"id\":6,\"profesorId\":1}],\"imagen\":{\"nombre\":\"habitacion\"},\"id\":1}",
+      "2": "{\"mapa\":\"tw\",\"descripcion\":\"tw\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":3,\"id\":1,\"profesorId\":1},{\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"id\":2,\"profesorId\":1},{\"nombre\":\"vasoDeAgua\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":2,\"id\":3,\"profesorId\":1},{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":4,\"id\":5,\"profesorId\":1},{\"nombre\":\"cuadro\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":5,\"id\":6,\"profesorId\":1}],\"imagen\":{\"nombre\":\"cocina\"},\"id\":2}"
     },
     "ObjetoEscape": {
-      "1": "{\"nombre\":\"botella\",\"usable\":true,\"recogido\":false,\"posicion\":\"objeto1\",\"profesorId\":1,\"objetoId\":1,\"id\":1}",
-      "2": "{\"nombre\":\"jarron\",\"usable\":true,\"recogido\":false,\"posicion\":\"objeto1\",\"profesorId\":1,\"objetoId\":2,\"id\":2}"
+      "1": "{\"nombre\":\"botella\",\"usable\":true,\"recogido\":false,\"profesorId\":1,\"objetoId\":1,\"id\":1}",
+      "2": "{\"nombre\":\"jarron\",\"usable\":true,\"recogido\":false,\"profesorId\":1,\"objetoId\":2,\"id\":2}",
+      "3": "{\"nombre\":\"vasoDeAgua\",\"usable\":true,\"recogido\":false,\"profesorId\":1,\"objetoId\":3,\"id\":3}",
+      "4": "{\"nombre\":\"lampara\",\"usable\":true,\"recogido\":false,\"profesorId\":1,\"objetoId\":4,\"id\":4}"
     },
     "ObjetoEnigma": {
-      "1": "{\"nombre\":\"cajaFuerte\",\"pregunta\":\"Quien es el rey del escape\",\"respuesta\":\"Mario\",\"resuelta\":false,\"profesorId\":1,\"objetoId\":3,\"id\":1}"
+      "1": "{\"nombre\":\"cajaFuerte\",\"pregunta\":\"Quien es el rey del escape\",\"respuesta\":\"Mario\",\"resuelta\":false,\"`principal`\":false,\"profesorId\":1,\"objetoId\":5,\"principal\":false,\"id\":1}",
+      "2": "{\"nombre\":\"cuadro\",\"pregunta\":\"Quien pintó este cuadro\",\"respuesta\":\"Requena\",\"resuelta\":false,\"`principal`\":false,\"profesorId\":1,\"objetoId\":6,\"principal\":false,\"id\":2}"
     },
     "ObjetoGlobalEscape": {
       "1": "{\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"profesorId\":1,\"id\":1}",
       "2": "{\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"profesorId\":1,\"id\":2}",
-      "3": "{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":1,\"profesorId\":1,\"id\":3}"
+      "3": "{\"nombre\":\"vasoDeAgua\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"profesorId\":1,\"id\":3}",
+      "4": "{\"nombre\":\"lampara\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"profesorId\":1,\"id\":4}",
+      "5": "{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":1,\"profesorId\":1,\"id\":5}",
+      "6": "{\"nombre\":\"cuadro\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":1,\"profesorId\":1,\"id\":6}"
     }
   }
 }
