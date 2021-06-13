@@ -40,6 +40,10 @@
     "mochila": {
       "type": "any",
       "required": true
+    },
+    "escenarioSecundario": {
+      "type": "any",
+      "required": true
     }
   },
   "validations": [],
