@@ -18,6 +18,10 @@
     "posicion": {
       "type": "number",
       "required": true
+    },
+    "escenario": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],

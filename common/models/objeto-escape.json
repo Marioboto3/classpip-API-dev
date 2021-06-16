@@ -20,6 +20,14 @@
       "type": "boolean",
       "required": true,
       "default": false
+    },
+    "escenario": {
+      "type": "string",
+      "required": true
+    },
+    "peso": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],

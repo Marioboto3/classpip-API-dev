@@ -71,12 +71,12 @@
     "escena": 1,
     "frame": 1,
     "EquipoJuegoDeVotacionUnoATodos": 1,
-    "JuegoDeEscapeRoom": 4,
-    "AlumnoJuegoDeEscapeRoom": 3,
+    "JuegoDeEscapeRoom": 2,
+    "AlumnoJuegoDeEscapeRoom": 2,
     "EscenarioEscapeRoom": 5,
-    "ObjetoEscape": 5,
-    "ObjetoEnigma": 3,
-    "ObjetoGlobalEscape": 7
+    "ObjetoEscape": 8,
+    "ObjetoEnigma": 5,
+    "ObjetoGlobalEscape": 12
   },
   "models": {
     "Profesor": {
@@ -158,39 +158,46 @@
     "frame": {},
     "EquipoJuegoDeVotacionUnoATodos": {},
     "JuegoDeEscapeRoom": {
-      "1": "{\"grupoId\":1,\"nombreJuego\":\"Juego prueba\",\"escenario\":{\"mapa\":\"Escenario\",\"descripcion\":\"Mario\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"id\":1,\"profesorId\":1},{\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":2,\"id\":2,\"profesorId\":1},{\"nombre\":\"vasoDeAgua\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":3,\"id\":3,\"profesorId\":1},{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":4,\"id\":5,\"profesorId\":1},{\"nombre\":\"cuadro\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":5,\"id\":6,\"profesorId\":1}],\"posicion\":\"Principal\",\"id\":1,\"imagen\":{\"nombre\":\"habitacion\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":false,\"mochila\":{\"objetos\":[],\"idJuegoDeEscapeRoom\":1},\"idEscenario\":1,\"id\":1}",
-      "2": "{\"id\":2,\"grupoId\":1,\"nombreJuego\":\"Lets test\",\"escenario\":{\"mapa\":\"Escenario\",\"descripcion\":\"Mario\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"id\":1,\"profesorId\":1},{\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":2,\"id\":2,\"profesorId\":1},{\"nombre\":\"vasoDeAgua\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":3,\"id\":3,\"profesorId\":1},{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":4,\"id\":5,\"profesorId\":1},{\"nombre\":\"cuadro\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":5,\"id\":6,\"profesorId\":1}],\"posicion\":\"Principal\",\"id\":1,\"imagen\":{\"nombre\":\"habitacion\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[],\"idJuegoDeEscapeRoom\":2},\"idEscenario\":1,\"escenarioSecundario\":{\"mapa\":\"habitacion\",\"descripcion\":\"limpia\",\"profesorId\":1,\"objetos\":{},\"posicion\":\"Secundario\",\"id\":2}}",
-      "3": "{\"grupoId\":1,\"nombreJuego\":\"Juego POSTMAN\",\"escenario\":{\"mapa\":\"Escenario\",\"descripcion\":\"Mario\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"id\":1,\"profesorId\":1},{\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":2,\"id\":2,\"profesorId\":1},{\"nombre\":\"vasoDeAgua\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":3,\"id\":3,\"profesorId\":1},{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":4,\"id\":5,\"profesorId\":1},{\"nombre\":\"cuadro\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":5,\"id\":6,\"profesorId\":1}],\"posicion\":\"Principal\",\"id\":1,\"imagen\":{\"nombre\":\"habitacion\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[],\"idJuegoDeEscapeRoom\":2},\"escenarioSecundario\":{\"mapa\":\"cocina\",\"descripcion\":\"medio limpia\",\"profesorId\":1,\"objetos\":{},\"posicion\":\"Secundario\",\"id\":3},\"idEscenario\":1,\"id\":3}"
+      "1": "{\"id\":1,\"grupoId\":1,\"nombreJuego\":\"gg\",\"escenario\":{\"mapa\":\"Escenario\",\"descripcion\":\"Mario\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"escenario\":\"Principal\",\"id\":1,\"profesorId\":1},{\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"escenario\":\"Principal\",\"posicion\":2,\"id\":2,\"profesorId\":1},{\"nombre\":\"vasoDeAgua\",\"tipoDeObjeto\":\"objetoEscape\",\"escenario\":\"Principal\",\"posicion\":3,\"id\":3,\"profesorId\":1},{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"escenario\":\"Principal\",\"posicion\":4,\"id\":5,\"profesorId\":1},{\"nombre\":\"cuadro\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":5,\"escenario\":\"Principal\",\"id\":6,\"profesorId\":1}],\"posicion\":\"Principal\",\"llave\":{\"nombre\":\"llave\",\"usable\":true,\"recogido\":false,\"escenario\":\"Auxiliar\",\"peso\":1,\"id\":8,\"profesorId\":1,\"objetoId\":12},\"id\":1,\"imagen\":{\"nombre\":\"habitacion\"}},\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"mochila\":{\"objetos\":[],\"pistasGuardadas\":[{\"nombre\":\"Primera pista\",\"escenario\":\"Escenario\",\"posicionEscenario\":\"Principal\",\"texto\":\"Recuerda observar bien todo tu alrededor, nunca sabes lo que te podrá ser útil en un futuro...\",\"recogida\":true}],\"idJuegoDeEscapeRoom\":1},\"escenarioSecundario\":{\"mapa\":\"baño\",\"descripcion\":\"medio sucio\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"jabon\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":3,\"escenario\":\"Secundario\",\"id\":7,\"profesorId\":1},{\"nombre\":\"cepilloDeDientes\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":2,\"escenario\":\"Secundario\",\"id\":8,\"profesorId\":1},{\"nombre\":\"boteDePastillas\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"escenario\":\"Secundario\",\"id\":9,\"profesorId\":1},{\"nombre\":\"bascula\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":1,\"escenario\":\"Secundario\",\"id\":10,\"profesorId\":1},{\"nombre\":\"armario\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":2,\"escenario\":\"Secundario\",\"id\":11,\"profesorId\":1}],\"posicion\":\"Secundario\",\"id\":4},\"idEscenario\":1}"
     },
     "AlumnoJuegoDeEscapeRoom": {
-      "1": "{\"personaje\":\"moreno\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":1,\"id\":1}",
-      "2": "{\"id\":2,\"personaje\":\"Elvis Tek\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":2}",
-      "3": "{\"id\":3,\"personaje\":\"Elvis Tek\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":3}"
-
+      "1": "{\"id\":1,\"personaje\":\"Elvis Tek\",\"alumnoId\":1,\"juegoDeEscapeRoomId\":1}"
     },
     "EscenarioEscapeRoom": {
-      "1": "{\"mapa\":\"Escenario\",\"descripcion\":\"Mario\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"id\":1,\"profesorId\":1},{\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":2,\"id\":2,\"profesorId\":1},{\"nombre\":\"vasoDeAgua\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":3,\"id\":3,\"profesorId\":1},{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":4,\"id\":5,\"profesorId\":1},{\"nombre\":\"cuadro\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":5,\"id\":6,\"profesorId\":1}],\"posicion\":\"Principal\",\"imagen\":{\"nombre\":\"habitacion\"},\"id\":1}",
+      "1": "{\"id\":1,\"mapa\":\"Escenario\",\"descripcion\":\"Mario\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"escenario\":\"Principal\",\"id\":1,\"profesorId\":1},{\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"escenario\":\"Principal\",\"posicion\":2,\"id\":2,\"profesorId\":1},{\"nombre\":\"vasoDeAgua\",\"tipoDeObjeto\":\"objetoEscape\",\"escenario\":\"Principal\",\"posicion\":3,\"id\":3,\"profesorId\":1},{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"escenario\":\"Principal\",\"posicion\":4,\"id\":5,\"profesorId\":1},{\"nombre\":\"cuadro\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":5,\"escenario\":\"Principal\",\"id\":6,\"profesorId\":1}],\"llave\":{\"id\":8,\"nombre\":\"llave\",\"usable\":true,\"recogido\":false,\"escenario\":\"Auxiliar\",\"profesorId\":1,\"objetoId\":12,\"peso\":1},\"posicion\":\"Principal\",\"imagen\":{\"nombre\":\"habitacion\"}}",
       "2": "{\"mapa\":\"habitacion\",\"descripcion\":\"limpia\",\"profesorId\":1,\"objetos\":{},\"posicion\":\"Secundario\",\"id\":2}",
       "3": "{\"mapa\":\"cocina\",\"descripcion\":\"medio limpia\",\"profesorId\":1,\"objetos\":{},\"posicion\":\"Secundario\",\"id\":3}",
-      "4": "{\"mapa\":\"baño\",\"descripcion\":\"medio sucio\",\"profesorId\":1,\"objetos\":{},\"posicion\":\"Secundario\",\"id\":4}"
+      "4": "{\"id\":4,\"mapa\":\"baño\",\"descripcion\":\"medio sucio\",\"profesorId\":1,\"objetos\":[{\"nombre\":\"jabon\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":3,\"escenario\":\"Secundario\",\"id\":7,\"profesorId\":1},{\"nombre\":\"cepilloDeDientes\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":2,\"escenario\":\"Secundario\",\"id\":8,\"profesorId\":1},{\"nombre\":\"boteDePastillas\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"escenario\":\"Secundario\",\"id\":9,\"profesorId\":1},{\"nombre\":\"bascula\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":1,\"escenario\":\"Secundario\",\"id\":10,\"profesorId\":1},{\"nombre\":\"armario\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":2,\"escenario\":\"Secundario\",\"id\":11,\"profesorId\":1}],\"posicion\":\"Secundario\"}"
     },
     "ObjetoEscape": {
-      "1": "{\"nombre\":\"botella\",\"usable\":true,\"recogido\":false,\"profesorId\":1,\"objetoId\":1,\"id\":1}",
-      "2": "{\"nombre\":\"jarron\",\"usable\":true,\"recogido\":false,\"profesorId\":1,\"objetoId\":2,\"id\":2}",
-      "3": "{\"nombre\":\"vasoDeAgua\",\"usable\":true,\"recogido\":false,\"profesorId\":1,\"objetoId\":3,\"id\":3}",
-      "4": "{\"nombre\":\"lampara\",\"usable\":true,\"recogido\":false,\"profesorId\":1,\"objetoId\":4,\"id\":4}"
+      "1": "{\"id\":1,\"nombre\":\"botella\",\"usable\":true,\"recogido\":false,\"escenario\":\"Principal\",\"peso\":1,\"profesorId\":1,\"objetoId\":1}",
+      "2": "{\"id\":2,\"nombre\":\"jarron\",\"usable\":true,\"recogido\":false,\"escenario\":\"Principal\",\"peso\":1,\"profesorId\":1,\"objetoId\":2}",
+      "3": "{\"id\":3,\"nombre\":\"vasoDeAgua\",\"usable\":true,\"recogido\":false,\"escenario\":\"Principal\",\"peso\":1,\"profesorId\":1,\"objetoId\":3}",
+      "4": "{\"id\":4,\"nombre\":\"lampara\",\"usable\":true,\"recogido\":false,\"escenario\":\"Principal\",\"profesorId\":1,\"objetoId\":4,\"peso\":1}",
+      "5": "{\"id\":5,\"nombre\":\"jabon\",\"usable\":true,\"recogido\":false,\"escenario\":\"Secundario\",\"profesorId\":1,\"objetoId\":7,\"peso\":1}",
+      "6": "{\"nombre\":\"cepilloDeDientes\",\"usable\":true,\"recogido\":false,\"escenario\":\"Secundario\",\"profesorId\":1,\"objetoId\":8,\"id\":6,\"peso\":1}",
+      "7": "{\"id\":7,\"nombre\":\"boteDePastillas\",\"usable\":true,\"recogido\":false,\"escenario\":\"Secundario\",\"profesorId\":1,\"objetoId\":9,\"peso\":1}",
+      "8": "{\"id\":8,\"nombre\":\"llave\",\"usable\":true,\"recogido\":false,\"escenario\":\"Auxiliar\",\"peso\":1,\"profesorId\":1,\"objetoId\":12}"
     },
     "ObjetoEnigma": {
-      "1": "{\"id\":1,\"nombre\":\"cajaFuerte\",\"pregunta\":\"Qué es eso\",\"respuesta\":\"Eso es queso\",\"resuelta\":false,\"principal\":false,\"profesorId\":1,\"objetoId\":5}",
-      "2": "{\"id\":2,\"nombre\":\"cuadro\",\"pregunta\":\"Quien pintó este cuadro\",\"respuesta\":\"Requena\",\"resuelta\":false,\"principal\":true,\"profesorId\":1,\"objetoId\":6}"
+      "1": "{\"id\":1,\"nombre\":\"cajaFuerte\",\"pregunta\":\"Qué es eso\",\"respuesta\":\"Eso es queso\",\"resuelta\":true,\"principal\":false,\"escenario\":\"Principal\",\"profesorId\":1,\"objetoId\":5}",
+      "2": "{\"id\":2,\"nombre\":\"cuadro\",\"pregunta\":\"Quien pintó este cuadro\",\"respuesta\":\"Requena\",\"resuelta\":false,\"principal\":true,\"escenario\":\"Principal\",\"profesorId\":1,\"objetoId\":6}",
+      "3": "{\"nombre\":\"bascula\",\"pregunta\":\"Cual será el peso correcto\",\"respuesta\":\"2\",\"resuelta\":false,\"principal\":true,\"escenario\":\"Secundario\",\"profesorId\":1,\"objetoId\":10,\"id\":3}",
+      "4": "{\"nombre\":\"armario\",\"pregunta\":\"Quien fue el inventor de la rueda\",\"respuesta\":\"Jordi\",\"resuelta\":false,\"principal\":false,\"escenario\":\"Secundario\",\"profesorId\":1,\"objetoId\":11,\"id\":4}"
     },
     "ObjetoGlobalEscape": {
-      "1": "{\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"profesorId\":1,\"id\":1}",
-      "2": "{\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"profesorId\":1,\"id\":2}",
-      "3": "{\"nombre\":\"vasoDeAgua\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"profesorId\":1,\"id\":3}",
-      "4": "{\"nombre\":\"lampara\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"profesorId\":1,\"id\":4}",
-      "5": "{\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":1,\"profesorId\":1,\"id\":5}",
-      "6": "{\"nombre\":\"cuadro\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":1,\"profesorId\":1,\"id\":6}"
+      "1": "{\"id\":1,\"nombre\":\"botella\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"escenario\":\"Principal\",\"profesorId\":1}",
+      "2": "{\"id\":2,\"nombre\":\"jarron\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"escenario\":\"Principal\",\"profesorId\":1}",
+      "3": "{\"id\":3,\"nombre\":\"vasoDeAgua\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"escenario\":\"Principal\",\"profesorId\":1}",
+      "4": "{\"id\":4,\"nombre\":\"lampara\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"escenario\":\"Principal\",\"profesorId\":1}",
+      "5": "{\"id\":5,\"nombre\":\"cajaFuerte\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":1,\"escenario\":\"Principal\",\"profesorId\":1}",
+      "6": "{\"id\":6,\"nombre\":\"cuadro\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":1,\"escenario\":\"Principal\",\"profesorId\":1}",
+      "7": "{\"id\":7,\"nombre\":\"jabon\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"escenario\":\"Secundario\",\"profesorId\":1}",
+      "8": "{\"nombre\":\"cepilloDeDientes\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"escenario\":\"Secundario\",\"profesorId\":1,\"id\":8}",
+      "9": "{\"nombre\":\"boteDePastillas\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"escenario\":\"Secundario\",\"profesorId\":1,\"id\":9}",
+      "10": "{\"nombre\":\"bascula\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":1,\"escenario\":\"Secundario\",\"profesorId\":1,\"id\":10}",
+      "11": "{\"nombre\":\"armario\",\"tipoDeObjeto\":\"objetoEnigma\",\"posicion\":2,\"escenario\":\"Secundario\",\"profesorId\":1,\"id\":11}",
+      "12": "{\"nombre\":\"llave\",\"tipoDeObjeto\":\"objetoEscape\",\"posicion\":1,\"escenario\":\"Auxiliar\",\"profesorId\":1,\"id\":12}"
     }
   }
 }

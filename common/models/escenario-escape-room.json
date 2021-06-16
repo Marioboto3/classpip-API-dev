@@ -26,6 +26,10 @@
     "posicion": {
       "type": "string",
       "required": true
+    },
+    "llave": {
+      "type": "ObjetoEscape",
+      "required": true
     }
   },
   "validations": [],
