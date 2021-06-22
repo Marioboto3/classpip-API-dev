@@ -140,7 +140,7 @@
     "public": true
   },
   "Imagen": {
-    "dataSource": "baseDatos",
+    "dataSource": "imagenes",
     "public": true
   },
   "Insignia": {
@@ -388,6 +388,26 @@
     "public": true
   },
   "ObjetoGlobalEscape": {
+    "dataSource": "baseDatos",
+    "public": true
+  },
+  "ObjetoJuego": {
+    "dataSource": "baseDatos",
+    "public": true
+  },
+  "EscenaDeJuego": {
+    "dataSource": "baseDatos",
+    "public": true
+  },
+  "ImagenEscenario": {
+    "dataSource": "baseDatos",
+    "public": true
+  },
+  "PartidaEscape": {
+    "dataSource": "baseDatos",
+    "public": true
+  },
+  "ObjetoRequerido": {
     "dataSource": "baseDatos",
     "public": true
   }

@@ -1,23 +1,29 @@
 {
-  "name": "EscenarioEscapeRoom",
-  "plural": "EscenariosEscapeRoom",
+  "name": "ImagenEscenario",
+  "plural": "ImagenesEscenario",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "mapa": {
+    "nombre": {
       "type": "string",
       "required": true
     },
-    "descripcion": {
+    "nombreDelFichero": {
       "type": "string",
       "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "EscenariosEscapeRoom": {
+      "type": "hasMany",
+      "model": "EscenarioEscapeRoom",
+      "foreignKey": "imagenId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -1,0 +1,38 @@
+{
+  "name": "EscenaDeJuego",
+  "plural": "EscenasDeJuego",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "posicion": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "PartidasEscape": {
+      "type": "hasMany",
+      "model": "PartidaEscape",
+      "foreignKey": "escenaId"
+    },
+    "ObjetosRequerido": {
+      "type": "hasMany",
+      "model": "ObjetoRequerido",
+      "foreignKey": "escenaId"
+    },
+    "EscenariosEscapeRoom": {
+      "type": "belongsTo",
+      "model": "EscenarioEscapeRoom",
+      "foreignKey": "escenarioId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

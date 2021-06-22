@@ -177,7 +177,12 @@
     },
     "RecursosLibros": {
       "type": "hasMany",
-      "model": "recursosLibro",
+      "model": "RecursosLibro",
+      "foreignKey": "profesorId"
+    },
+    "ImagenesEscenario": {
+      "type": "hasMany",
+      "model": "ImagenEscenario",
       "foreignKey": "profesorId"
     }
   },

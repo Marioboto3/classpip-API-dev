@@ -1,0 +1,79 @@
+{
+  "name": "ObjetoJuego",
+  "plural": "ObjetosJuego",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "pregunta": {
+      "type": "string",
+      "required": true
+    },
+    "respuesta": {
+      "type": "string",
+      "required": true
+    },
+    "usable": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "recogido": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "resuelto": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "posicion": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "ObjetosGlobalesEscape": {
+      "type": "belongsTo",
+      "model": "ObjetoGlobalEscape",
+      "foreignKey": "objetoId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "EscenariosEscapeRoom": {
+      "type": "belongsTo",
+      "model": "EscenarioEscapeRoom",
+      "foreignKey": "escenarioId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "JuegosDeEscapeRoom": {
+      "type": "belongsTo",
+      "model": "JuegoDeEscapeRoom",
+      "foreignKey": "juegoDeEscapeRoomId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "EscenasDeJuego": {
+      "type": "belongsTo",
+      "model": "EscenaDeJuego",
+      "foreignKey": "escenaId",
+      "options": {
+        "nestRemoting": true
+      }
+    },"ObjetosRequerido": {
+      "type": "hasMany",
+      "model": "ObjetoRequerido",
+      "foreignKey": "objetoJuegoId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -19,11 +19,6 @@
       "type": "string",
       "required": true
     },
-    "resuelta": {
-      "type": "boolean",
-      "required": true,
-      "default": false
-    },
     "principal": {
       "type": "boolean",
       "required": true,

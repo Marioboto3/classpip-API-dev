@@ -1,0 +1,25 @@
+{
+  "name": "ObjetoRequerido",
+  "plural": "ObjetosRequerido",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "recogido": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "usado": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

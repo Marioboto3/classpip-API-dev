@@ -16,11 +16,6 @@
       "required": true,
       "default": true
     },
-    "recogido": {
-      "type": "boolean",
-      "required": true,
-      "default": false
-    },
     "escenario": {
       "type": "string",
       "required": true

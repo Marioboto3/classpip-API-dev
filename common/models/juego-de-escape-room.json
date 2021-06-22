@@ -15,10 +15,6 @@
       "type": "string",
       "required": true
     },
-    "escenario": {
-      "type": "any",
-      "required": true
-    },
     "modo": {
       "type": "string",
       "required": true
@@ -36,18 +32,21 @@
       "type": "boolean",
       "required": true,
       "default": false
-    },
-    "mochila": {
-      "type": "any",
-      "required": true
-    },
-    "escenarioSecundario": {
-      "type": "any",
-      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "PartidasEscape": {
+      "type": "hasMany",
+      "model": "PartidaEscape",
+      "foreignKey": "juegoDeEscapeRoomId"
+    },
+    "ObjetosRequerido": {
+      "type": "hasMany",
+      "model": "ObjetoRequerido",
+      "foreignKey": "juegoDeEscapeRoomId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

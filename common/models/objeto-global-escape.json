@@ -11,22 +11,17 @@
       "type": "string",
       "required": true
     },
-    "tipoDeObjeto": {
+    "imagen": {
       "type": "string",
       "required": true
     },
-    "posicion": {
-      "type": "number",
-      "required": true
-    },
-    "escenario": {
+    "tipo": {
       "type": "string",
       "required": true
     }
   },
   "validations": [],
-  "relations": {
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

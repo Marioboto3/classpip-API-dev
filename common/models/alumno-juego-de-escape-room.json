@@ -10,8 +10,8 @@
     "personaje": {
       "type": "string"
     },
-    "alumnoId": {
-      "type": "number",
+    "mochila": {
+      "type": "any",
       "required": true
     }
   },
