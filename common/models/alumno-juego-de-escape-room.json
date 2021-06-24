@@ -10,8 +10,8 @@
     "personaje": {
       "type": "string"
     },
-    "mochila": {
-      "type": "any",
+    "escenaActualId": {
+      "type": "number",
       "required": true
     }
   },
