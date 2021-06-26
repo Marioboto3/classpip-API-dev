@@ -19,9 +19,9 @@
       "model": "PartidaEscape",
       "foreignKey": "escenaId"
     },
-    "ObjetosRequerido": {
+    "ObjetosJuego": {
       "type": "hasMany",
-      "model": "ObjetoRequerido",
+      "model": "ObjetoJuego",
       "foreignKey": "escenaId"
     },
     "EscenariosEscapeRoom": {

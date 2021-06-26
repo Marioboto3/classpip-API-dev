@@ -40,11 +40,6 @@
       "type": "hasMany",
       "model": "PartidaEscape",
       "foreignKey": "juegoDeEscapeRoomId"
-    },
-    "ObjetosRequerido": {
-      "type": "hasMany",
-      "model": "ObjetoRequerido",
-      "foreignKey": "juegoDeEscapeRoomId"
     }
   },
   "acls": [

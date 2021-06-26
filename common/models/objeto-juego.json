@@ -33,6 +33,17 @@
     "posicion": {
       "type": "number",
       "required": true
+    },
+    "principal": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+    ,
+    "requerido": {
+      "type": "boolean",
+      "required": true,
+      "default": false
     }
   },
   "validations": [],
@@ -60,19 +71,6 @@
       "options": {
         "nestRemoting": true
       }
-    },
-    "EscenasDeJuego": {
-      "type": "belongsTo",
-      "model": "EscenaDeJuego",
-      "foreignKey": "escenaId",
-      "options": {
-        "nestRemoting": true
-      }
-    },
-    "ObjetosRequerido": {
-      "type": "hasMany",
-      "model": "ObjetoRequerido",
-      "foreignKey": "objetoJuegoId"
     }
   },
   "acls": [
