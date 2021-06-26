@@ -1,8 +1,8 @@
 {
   "ids": {
-    "Profesor": 2,
+    "Profesor": 3,
     "Alumno": 2,
-    "Grupo": 4,
+    "Grupo": 5,
     "Punto": 1,
     "Coleccion": 1,
     "Cromo": 1,
@@ -84,13 +84,15 @@
   },
   "models": {
     "Profesor": {
-      "1": "{\"id\":1,\"nombre\":\"Mario\",\"primerApellido\":\"Primer\",\"segundoApellido\":\"Usuario\",\"nombreUsuario\":\"Mario Test\",\"email\":\"marioboto98@gmail.com\",\"password\":\"test\",\"imagenPerfil\":null,\"identificador\":\"25696\",\"estacion\":\"spring\"}"
+      "1": "{\"id\":1,\"nombre\":\"Mario\",\"primerApellido\":\"Primer\",\"segundoApellido\":\"Usuario\",\"username\":\"Mario Test\",\"email\":\"marioboto98@gmail.com\",\"password\":\"test\",\"imagenPerfil\":null,\"identificador\":\"25696\",\"estacion\":\"spring\"}",
+      "2": "{\"nombre\":\"Ivan\",\"primerApellido\":\"Requena\",\"segundoApellido\":\"Garcia\",\"username\":\"ivan\",\"email\":\"ivan@gmail.com\",\"password\":\"$2a$10$S0QwVTeCm9ffFtH7oLSjuOL.460VrS7aq8iivEZwnhWVBA3Rdap5a\",\"imagenPerfil\":null,\"identificador\":\"96641\",\"estacion\":\"summer\",\"id\":2}"
     },
     "Alumno": {
       "1": "{\"nombre\":\"Mario alumno\",\"primerApellido\":\"Sanchez\",\"segundoApellido\":\"Boto\",\"imagenPerfil\":null,\"permisoCambioImagenPerfil\":false,\"username\":\"Mario alumno\",\"email\":\"mario@gmail.com\",\"password\":\"test\",\"profesorId\":1,\"id\":1}"
     },
     "Grupo": {
-      "1": "{\"nombre\":\"Test group\",\"descripcion\":\"First\",\"profesorId\":1,\"id\":1}"
+      "1": "{\"nombre\":\"Test group\",\"descripcion\":\"First\",\"profesorId\":1,\"id\":1}",
+      "4": "{\"nombre\":\"test\",\"descripcion\":\"Prueba\",\"profesorId\":2,\"id\":4}"
     },
     "Punto": {},
     "Coleccion": {},
