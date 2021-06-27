@@ -406,5 +406,8 @@
   "PartidaEscape": {
     "dataSource": "baseDatos",
     "public": true
+  },
+  "Email": {
+    "dataSource": "email"
   }
 }
