@@ -1,7 +1,7 @@
 {
   "ids": {
     "Profesor": 3,
-    "Alumno": 2,
+    "Alumno": 4,
     "Grupo": 5,
     "Punto": 1,
     "Coleccion": 1,
@@ -81,14 +81,16 @@
     "EscenaDeJuego": 2,
     "PartidaEscape": 2,
     "ObjetoJuego": 3
-    },
+  },
   "models": {
     "Profesor": {
       "1": "{\"id\":1,\"nombre\":\"Mario\",\"primerApellido\":\"Primer\",\"segundoApellido\":\"Usuario\",\"username\":\"Mario Test\",\"email\":\"marioboto98@gmail.com\",\"password\":\"test\",\"imagenPerfil\":null,\"identificador\":\"25696\",\"estacion\":\"spring\"}",
-      "2": "{\"nombre\":\"Ivan\",\"primerApellido\":\"Requena\",\"segundoApellido\":\"Garcia\",\"username\":\"ivan\",\"email\":\"ivan@gmail.com\",\"password\":\"$2a$10$S0QwVTeCm9ffFtH7oLSjuOL.460VrS7aq8iivEZwnhWVBA3Rdap5a\",\"imagenPerfil\":null,\"identificador\":\"96641\",\"estacion\":\"summer\",\"id\":2}"
+      "2": "{\"id\":2,\"nombre\":\"Ivan\",\"primerApellido\":\"Requena\",\"segundoApellido\":\"Garcia\",\"username\":\"ivan\",\"email\":\"ivan.requena16@gmail.com\",\"password\":\"$2a$10$NAF9POUY2iIXFxgpaGxY5.C9dFSmqQ8NU8jAM1liMJtbhC0hOuIRu\",\"imagenPerfil\":null,\"identificador\":\"96641\",\"estacion\":\"winter\"}"
     },
     "Alumno": {
-      "1": "{\"nombre\":\"Mario alumno\",\"primerApellido\":\"Sanchez\",\"segundoApellido\":\"Boto\",\"imagenPerfil\":null,\"permisoCambioImagenPerfil\":false,\"username\":\"Mario alumno\",\"email\":\"mario@gmail.com\",\"password\":\"test\",\"profesorId\":1,\"id\":1}"
+      "1": "{\"nombre\":\"Mario alumno\",\"primerApellido\":\"Sanchez\",\"segundoApellido\":\"Boto\",\"imagenPerfil\":null,\"permisoCambioImagenPerfil\":false,\"username\":\"Mario alumno\",\"email\":\"mario@gmail.com\",\"password\":\"test\",\"profesorId\":1,\"id\":1}",
+      "2": "{\"nombre\":\"Ivan\",\"primerApellido\":\"Requena\",\"segundoApellido\":\"Garcia\",\"imagenPerfil\":null,\"permisoCambioImagenPerfil\":false,\"username\":\"ivan\",\"email\":\"ivan.requena16@gmail.com\",\"password\":\"$2a$10$559fW/N.KqSzugq14w32ru3xXentluAG0JggCZwKS1BhQ4WnsWwK.\",\"profesorId\":1,\"id\":2}",
+      "3": "{\"nombre\":\"Jordi\",\"primerApellido\":\"Salvador\",\"segundoApellido\":\"Carreté\",\"imagenPerfil\":null,\"permisoCambioImagenPerfil\":false,\"username\":\"jorge\",\"email\":\"jordi@gmail.com\",\"password\":\"$2a$10$e4DzdvBdO5LixSEVD4qIB.txH3RKyYOCub1LDsG7SVmI0HgVMZb4.\",\"profesorId\":2,\"permisoCambioimagenPerfil\":false,\"id\":3}"
     },
     "Grupo": {
       "1": "{\"nombre\":\"Test group\",\"descripcion\":\"First\",\"profesorId\":1,\"id\":1}",
@@ -217,7 +219,6 @@
       "12": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usable\":true,\"recogido\":false,\"resuelto\":false,\"principal\":false,\"posicion\":3,\"requerido\":true,\"requeridoEscenaId\":2,\"objetoId\":10,\"escenarioId\":5,\"juegoDeEscapeRoomId\":1,\"escenaId\":2,\"id\":12}",
       "13": "{\"pregunta\":\"¿Quién es el más guapo?\",\"respuesta\":\"Mario\",\"usable\":false,\"recogido\":false,\"resuelto\":false,\"principal\":true,\"posicion\":4,\"requerido\":false,\"requeridoEscenaId\":2,\"objetoId\":11,\"escenarioId\":5,\"juegoDeEscapeRoomId\":1,\"escenaId\":2,\"id\":13}",
       "14": "{\"pregunta\":\"¿Quién es muy top?\",\"respuesta\":\"Mario\",\"usable\":false,\"recogido\":false,\"principal\":false,\"posicion\":5,\"requerido\":false,\"requeridoEscenaId\":2,\"resuelto\":false,\"objetoId\":12,\"escenarioId\":5,\"juegoDeEscapeRoomId\":1,\"escenaId\":2,\"id\":14}"
-      
     }
   }
 }
