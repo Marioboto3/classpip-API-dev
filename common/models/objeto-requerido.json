@@ -1,19 +1,21 @@
 {
-  "name": "Jornada",
-  "plural": "Jornadas",
+  "name": "ObjetoRequerido",
+  "plural": "ObjetosRequerido",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "nombre": {
-      "type": "string",
-      "required": true
+    "recogido": {
+      "type": "boolean",
+      "required": true,
+      "default": false
     },
-    "fecha": {
-      "type": "date",
-      "required": true
+    "usado": {
+      "type": "boolean",
+      "required": true,
+      "default": false
     }
   },
   "validations": [],

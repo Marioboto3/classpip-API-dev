@@ -1,7 +1,7 @@
 {
   "name": "Profesor",
   "plural": "Profesores",
-  "base": "PersistedModel",
+  "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
@@ -19,7 +19,7 @@
       "type": "string",
       "required": true
     },
-    "nombreUsuario": {
+    "username": {
       "type": "string",
       "required": true
     },
@@ -186,6 +186,20 @@
       "foreignKey": "profesorId"
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "find"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }
