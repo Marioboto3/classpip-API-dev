@@ -15,7 +15,7 @@
       "type": "string",
       "required": true
     },
-    "usable": {
+    "usado": {
       "type": "boolean",
       "required": true,
       "default": false

@@ -71,16 +71,16 @@
     "escena": 1,
     "frame": 1,
     "EquipoJuegoDeVotacionUnoATodos": 1,
-    "JuegoDeEscapeRoom": 2,
-    "AlumnoJuegoDeEscapeRoom": 2,
-    "EscenarioEscapeRoom": 13,
+    "JuegoDeEscapeRoom": 4,
+    "AlumnoJuegoDeEscapeRoom": 4,
+    "EscenarioEscapeRoom": 4,
     "ObjetoEscape": 1,
     "ObjetoEnigma": 1,
-    "ObjetoGlobalEscape": 3,
+    "ObjetoGlobalEscape": 25,
     "ImagenEscenario": 4,
-    "EscenaDeJuego": 2,
-    "PartidaEscape": 2,
-    "ObjetoJuego": 3
+    "EscenaDeJuego": 4,
+    "PartidaEscape": 6,
+    "ObjetoJuego": 36
   },
   "models": {
     "Profesor": {
@@ -218,14 +218,19 @@
     "frame": {},
     "EquipoJuegoDeVotacionUnoATodos": {},
     "JuegoDeEscapeRoom": {
-      "1": "{\"grupoId\":1,\"nombreJuego\":\"Prueba\",\"modo\":\"individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true,\"id\":1}"
+      "1": "{\"id\":1,\"grupoId\":1,\"nombreJuego\":\"Poblado\",\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true}",
+      "2": "{\"id\":2,\"grupoId\":1,\"nombreJuego\":\"Mansion\",\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true}",
+      "3": "{\"id\":3,\"grupoId\":1,\"nombreJuego\":\"Ciudad\",\"modo\":\"Individual\",\"tipo\":\"Juego De Escape Room\",\"juegoActivo\":true,\"estado\":true}"
     },
     "AlumnoJuegoDeEscapeRoom": {
-      "1": "{\"personaje\":\"Elvis Tek\",\"escenaActualId\":1,\"alumnoId\":1,\"juegoDeEscapeRoomId\":1,\"id\":1}"
+      "1": "{\"id\":1,\"personaje\":\"Elvis Tek\",\"escenaActualId\":1,\"alumnoId\":1,\"juegoDeEscapeRoomId\":1}",
+      "2": "{\"id\":2,\"personaje\":\"Elvis Tek\",\"escenaActualId\":1,\"alumnoId\":1,\"juegoDeEscapeRoomId\":2}",
+      "3": "{\"id\":3,\"personaje\":\"Conpa Tatas\",\"escenaActualId\":1,\"alumnoId\":1,\"juegoDeEscapeRoomId\":3}"
     },
     "EscenarioEscapeRoom": {
-      "3": "{\"mapa\":\"Escenario en la Cocina\",\"descripcion\":\"Cocina del gran chef Marius\",\"profesorId\":1,\"imagenId\":2,\"id\":3}",
-      "5": "{\"mapa\":\"Escenario en el Baño\",\"descripcion\":\"El baño del cagón Requena\",\"profesorId\":1,\"imagenId\":3,\"id\":5}"
+      "1": "{\"mapa\":\"Escenario en la Cocina\",\"descripcion\":\"Cocina del gran chef Marius\",\"profesorId\":1,\"imagenId\":2,\"id\":1}",
+      "2": "{\"mapa\":\"Escenario en el Baño\",\"descripcion\":\"El baño del cagón Requena\",\"profesorId\":1,\"imagenId\":3,\"id\":2}",
+      "3": "{\"mapa\":\"Celda\",\"descripcion\":\"La celda 666 de la cárcel.\",\"profesorId\":1,\"imagenId\":4,\"id\":3}"
     },
     "ObjetoEscape": {},
     "ObjetoEnigma": {},
@@ -241,36 +246,77 @@
       "9": "{\"nombre\":\"Lámpara\",\"imagen\":\"lampara.png\",\"tipo\":\"objetoEscape\",\"profesorId\":1,\"id\":9}",
       "10": "{\"nombre\":\"Jabón\",\"imagen\":\"jabon.JPG\",\"tipo\":\"objetoEscape\",\"profesorId\":1,\"id\":10}",
       "11": "{\"nombre\":\"Báscula\",\"imagen\":\"bascula.JPG\",\"tipo\":\"objetoEnigma\",\"profesorId\":1,\"id\":11}",
-      "12": "{\"nombre\":\"Mapa\",\"imagen\":\"mapa.png\",\"tipo\":\"objetoEnigma\",\"profesorId\":1,\"id\":12}"
+      "12": "{\"nombre\":\"Mapa\",\"imagen\":\"mapa.png\",\"tipo\":\"objetoEnigma\",\"profesorId\":1,\"id\":12}",
+      "13": "{\"nombre\":\"Pelota\",\"imagen\":\"logo_estandar.png\",\"tipo\":\"objetoEscape\",\"profesorId\":1,\"id\":13}",
+      "14": "{\"nombre\":\"Mochila\",\"imagen\":\"interrogante.jpg\",\"tipo\":\"objetoEnigma\",\"profesorId\":1,\"id\":14}",
+      "15": "{\"nombre\":\"Cadena\",\"imagen\":\"images.jpg\",\"tipo\":\"objetoEscape\",\"profesorId\":1,\"id\":15}",
+      "16": "{\"nombre\":\"Baúl\",\"imagen\":\"logo_eetac.png\",\"tipo\":\"objetoEnigma\",\"profesorId\":1,\"id\":16}",
+      "17": "{\"nombre\":\"Maleta\",\"imagen\":\"satisfaccion.png\",\"tipo\":\"objetoEnigma\",\"profesorId\":1,\"id\":17}",
+      "18": "{\"nombre\":\"Bolígrafo\",\"imagen\":\"ruta.png\",\"tipo\":\"objetoEscape\",\"profesorId\":1,\"id\":18}",
+      "19": "{\"nombre\":\"Bandeja\",\"imagen\":\"fondoportada.png\",\"tipo\":\"objetoEscape\",\"profesorId\":1,\"id\":19}",
+      "20": "{\"nombre\":\"Libreta\",\"imagen\":\"encuenta-de-satisfacción-del-cliente.jpg\",\"tipo\":\"objetoEnigma\",\"profesorId\":1,\"id\":20}",
+      "21": "{\"nombre\":\"Pantalla\",\"imagen\":\"cuestionario.png\",\"tipo\":\"objetoEnigma\",\"profesorId\":1,\"id\":21}",
+      "22": "{\"nombre\":\"Portátil\",\"imagen\":\"punto.png\",\"tipo\":\"objetoEscape\",\"profesorId\":1,\"id\":22}",
+      "23": "{\"nombre\":\"Estuche\",\"imagen\":\"ImagenLogin.png\",\"tipo\":\"objetoEnigma\",\"profesorId\":1,\"id\":23}",
+      "24": "{\"nombre\":\"Peluche\",\"imagen\":\"baño.jpg\",\"tipo\":\"objetoEscape\",\"profesorId\":1,\"id\":24}"
     },
     "ImagenEscenario": {
       "1": "{\"nombre\":\"Habitación\",\"nombreDelFichero\":\"habitacion.jpg\",\"profesorId\":1,\"id\":1}",
       "2": "{\"nombre\":\"Cocina\",\"nombreDelFichero\":\"cocina.jpg\",\"profesorId\":1,\"id\":2}",
-      "3": "{\"nombre\":\"Baño\",\"nombreDelFichero\":\"baño.jpg\",\"profesorId\":1,\"id\":3}"
+      "3": "{\"nombre\":\"Baño\",\"nombreDelFichero\":\"baño.jpg\",\"profesorId\":1,\"id\":3}",
+      "4": "{\"nombre\":\"Celda\",\"nombreDelFichero\":\"celda.jpg\",\"profesorId\":1,\"id\":4}",
+      "5": "{\"nombre\":\"Parque\",\"nombreDelFichero\":\"parque.jpg\",\"profesorId\":1,\"id\":5}",
+      "6": "{\"nombre\":\"Sótano\",\"nombreDelFichero\":\"sotano.jpg\",\"profesorId\":1,\"id\":6}",
+      "7": "{\"nombre\":\"Parking\",\"nombreDelFichero\":\"baño.jpg\",\"profesorId\":1,\"id\":7}"
     },
     "EscenaDeJuego": {
       "1": "{\"posicion\":1,\"escenarioId\":3,\"id\":1}",
-      "2": "{\"posicion\":2,\"escenarioId\":5,\"id\":2}"
+      "2": "{\"posicion\":3,\"escenarioId\":1,\"id\":2}",
+      "3": "{\"posicion\":2,\"escenarioId\":2,\"id\":3}"
     },
     "PartidaEscape": {
-      "1": "{\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"id\":1}",
-      "2": "{\"juegoDeEscapeRoomId\":1,\"escenaId\":2,\"id\":2}"
+      "1": "{\"posicion\":1,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"id\":1}",
+      "2": "{\"posicion\":1,\"juegoDeEscapeRoomId\":2,\"escenaId\":1,\"id\":2}",
+      "3": "{\"posicion\":1,\"juegoDeEscapeRoomId\":3,\"escenaId\":1,\"id\":3}",
+      "4": "{\"posicion\":3,\"juegoDeEscapeRoomId\":3,\"escenaId\":2,\"id\":4}",
+      "5": "{\"posicion\":2,\"juegoDeEscapeRoomId\":3,\"escenaId\":3,\"id\":5}"
     },
     "ObjetoJuego": {
-      "1": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usable\":true,\"recogido\":false,\"resuelto\":false,\"principal\":false,\"posicion\":1,\"requerido\":false,\"requeridoEscenaId\":1,\"objetoId\":1,\"escenarioId\":3,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"id\":1}",
-      "2": "{\"pregunta\":\"Estate atento, nunca sabes que objetos te van a hacer falta más tarde...\",\"respuesta\":\" \",\"usable\":false,\"recogido\":false,\"principal\":false,\"posicion\":2,\"requerido\":false,\"requeridoEscenaId\":1,\"resuelto\":false,\"objetoId\":2,\"escenarioId\":3,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"id\":2}",
-      "3": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usable\":true,\"recogido\":false,\"resuelto\":false, \"principal\":false,\"posicion\":1,\"requerido\":true,\"requeridoEscenaId\":1,\"objetoId\":3,\"escenarioId\":3,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"id\":3}",
-      "4": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usable\":true,\"recogido\":false,\"resuelto\":false,\"principal\":false,\"posicion\":2,\"requerido\":true,\"requeridoEscenaId\":1,\"objetoId\":4,\"escenarioId\":3,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"id\":4}",
-      "5": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usable\":true,\"recogido\":false,\"resuelto\":false,\"principal\":false,\"posicion\":3,\"requerido\":false,\"requeridoEscenaId\":1,\"objetoId\":5,\"escenarioId\":3,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"id\":5}",
-      "6": "{\"pregunta\":\"¿Quién es el más guapo?\",\"respuesta\":\"Mario\",\"usable\":false,\"recogido\":false,\"resuelto\":false,\"principal\":true,\"posicion\":4,\"requerido\":false,\"requeridoEscenaId\":1,\"objetoId\":6,\"escenarioId\":3,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"id\":6}",
-      "7": "{\"pregunta\":\"¿Quién es muy top?\",\"respuesta\":\"Mario\",\"usable\":false,\"recogido\":false,\"principal\":false,\"posicion\":5,\"requerido\":false,\"requeridoEscenaId\":1,\"resuelto\":false,\"objetoId\":7,\"escenarioId\":3,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"id\":7}",
-      "8": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usable\":true,\"recogido\":false,\"resuelto\":false,\"principal\":false,\"posicion\":1,\"requerido\":true,\"requeridoEscenaId\":2,\"objetoId\":8,\"escenarioId\":5,\"juegoDeEscapeRoomId\":1,\"escenaId\":2,\"id\":8}",
-      "9": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usable\":true,\"recogido\":false,\"resuelto\":false,\"principal\":false,\"posicion\":1,\"requerido\":false,\"requeridoEscenaId\":1,\"objetoId\":1,\"escenarioId\":5,\"juegoDeEscapeRoomId\":1,\"escenaId\":2,\"id\":9}",
-      "10": "{\"pregunta\":\"Llegaste a la segunda base...\",\"respuesta\":\" \",\"usable\":false,\"recogido\":false,\"principal\":false,\"posicion\":2,\"requerido\":false,\"requeridoEscenaId\":1,\"resuelto\":false,\"objetoId\":2,\"escenarioId\":5,\"juegoDeEscapeRoomId\":1,\"escenaId\":2,\"id\":10}",
-      "11": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usable\":true,\"recogido\":false,\"resuelto\":false,\"principal\":false,\"posicion\":2,\"requerido\":true,\"requeridoEscenaId\":2,\"objetoId\":9,\"escenarioId\":5,\"juegoDeEscapeRoomId\":1,\"escenaId\":2,\"id\":11}",
-      "12": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usable\":true,\"recogido\":false,\"resuelto\":false,\"principal\":false,\"posicion\":3,\"requerido\":true,\"requeridoEscenaId\":2,\"objetoId\":10,\"escenarioId\":5,\"juegoDeEscapeRoomId\":1,\"escenaId\":2,\"id\":12}",
-      "13": "{\"pregunta\":\"¿Quién es el más guapo?\",\"respuesta\":\"Mario\",\"usable\":false,\"recogido\":false,\"resuelto\":false,\"principal\":true,\"posicion\":4,\"requerido\":false,\"requeridoEscenaId\":2,\"objetoId\":11,\"escenarioId\":5,\"juegoDeEscapeRoomId\":1,\"escenaId\":2,\"id\":13}",
-      "14": "{\"pregunta\":\"¿Quién es muy top?\",\"respuesta\":\"Mario\",\"usable\":false,\"recogido\":false,\"principal\":false,\"posicion\":5,\"requerido\":false,\"requeridoEscenaId\":2,\"resuelto\":false,\"objetoId\":12,\"escenarioId\":5,\"juegoDeEscapeRoomId\":1,\"escenaId\":2,\"id\":14}"
+      "1": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":true,\"objetoId\":1,\"escenarioId\":3,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":1}",
+      "2": "{\"pregunta\":\"Estate atento a todo tu alrededor.\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":true,\"objetoId\":2,\"escenarioId\":3,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":2}",
+      "3": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":true,\"objetoId\":3,\"escenarioId\":3,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":3}",
+      "4": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":2,\"principal\":false,\"requerido\":true,\"objetoId\":4,\"escenarioId\":3,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":4}",
+      "5": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":3,\"principal\":false,\"requerido\":false,\"objetoId\":5,\"escenarioId\":3,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":5}",
+      "6": "{\"pregunta\":\"Iván\",\"respuesta\":\"Requena\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":4,\"principal\":true,\"requerido\":false,\"objetoId\":6,\"escenarioId\":3,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":6}",
+      "7": "{\"pregunta\":\"Es un\",\"respuesta\":\"Paleta\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":5,\"principal\":false,\"requerido\":false,\"objetoId\":7,\"escenarioId\":3,\"juegoDeEscapeRoomId\":1,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":7}",
+      "8": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":true,\"objetoId\":1,\"escenarioId\":3,\"juegoDeEscapeRoomId\":2,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":8}",
+      "9": "{\"pregunta\":\"Lalala\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":true,\"objetoId\":2,\"escenarioId\":3,\"juegoDeEscapeRoomId\":2,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":9}",
+      "10": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":true,\"objetoId\":13,\"escenarioId\":3,\"juegoDeEscapeRoomId\":2,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":10}",
+      "11": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":2,\"principal\":false,\"requerido\":true,\"objetoId\":15,\"escenarioId\":3,\"juegoDeEscapeRoomId\":2,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":11}",
+      "12": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":3,\"principal\":false,\"requerido\":false,\"objetoId\":18,\"escenarioId\":3,\"juegoDeEscapeRoomId\":2,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":12}",
+      "13": "{\"pregunta\":\"Mal\",\"respuesta\":\"eta\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":4,\"principal\":true,\"requerido\":false,\"objetoId\":17,\"escenarioId\":3,\"juegoDeEscapeRoomId\":2,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":13}",
+      "14": "{\"pregunta\":\"Ba\",\"respuesta\":\"úl\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":5,\"principal\":false,\"requerido\":false,\"objetoId\":16,\"escenarioId\":3,\"juegoDeEscapeRoomId\":2,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":14}",
+      "15": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":true,\"objetoId\":1,\"escenarioId\":3,\"juegoDeEscapeRoomId\":3,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":15}",
+      "16": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":true,\"objetoId\":1,\"escenarioId\":1,\"juegoDeEscapeRoomId\":3,\"escenaId\":2,\"requeridoEscenaId\":2,\"id\":16}",
+      "17": "{\"pregunta\":\"TEX\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":true,\"objetoId\":2,\"escenarioId\":3,\"juegoDeEscapeRoomId\":3,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":17}",
+      "18": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":true,\"objetoId\":1,\"escenarioId\":2,\"juegoDeEscapeRoomId\":3,\"escenaId\":3,\"requeridoEscenaId\":3,\"id\":18}",
+      "19": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":true,\"objetoId\":3,\"escenarioId\":3,\"juegoDeEscapeRoomId\":3,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":19}",
+      "20": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":2,\"principal\":false,\"requerido\":true,\"objetoId\":4,\"escenarioId\":3,\"juegoDeEscapeRoomId\":3,\"escenaId\":1,\"requeridoEscenaId\":2,\"id\":20}",
+      "21": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":3,\"principal\":false,\"requerido\":true,\"objetoId\":5,\"escenarioId\":3,\"juegoDeEscapeRoomId\":3,\"escenaId\":1,\"requeridoEscenaId\":3,\"id\":21}",
+      "22": "{\"pregunta\":\"AS\",\"respuesta\":\"AS\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":4,\"principal\":true,\"requerido\":false,\"objetoId\":6,\"escenarioId\":3,\"juegoDeEscapeRoomId\":3,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":22}",
+      "23": "{\"pregunta\":\"SD\",\"respuesta\":\"SD\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":5,\"principal\":false,\"requerido\":false,\"objetoId\":7,\"escenarioId\":3,\"juegoDeEscapeRoomId\":3,\"escenaId\":1,\"requeridoEscenaId\":1,\"id\":23}",
+      "24": "{\"pregunta\":\"Estate atento a todo tu alrededor.\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":true,\"objetoId\":2,\"escenarioId\":1,\"juegoDeEscapeRoomId\":3,\"escenaId\":2,\"requeridoEscenaId\":2,\"id\":24}",
+      "25": "{\"pregunta\":\"Estate atento a todo tu alrededor.\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":true,\"objetoId\":2,\"escenarioId\":2,\"juegoDeEscapeRoomId\":3,\"escenaId\":3,\"requeridoEscenaId\":3,\"id\":25}",
+      "26": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":false,\"objetoId\":8,\"escenarioId\":2,\"juegoDeEscapeRoomId\":3,\"escenaId\":2,\"requeridoEscenaId\":1,\"id\":26}",
+      "27": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":2,\"principal\":false,\"requerido\":false,\"objetoId\":9,\"escenarioId\":2,\"juegoDeEscapeRoomId\":3,\"escenaId\":2,\"requeridoEscenaId\":1,\"id\":27}",
+      "28": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":3,\"principal\":false,\"requerido\":false,\"objetoId\":10,\"escenarioId\":2,\"juegoDeEscapeRoomId\":3,\"escenaId\":2,\"requeridoEscenaId\":1,\"id\":28}",
+      "29": "{\"pregunta\":\"DF\",\"respuesta\":\"DF\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":4,\"principal\":true,\"requerido\":false,\"objetoId\":11,\"escenarioId\":2,\"juegoDeEscapeRoomId\":3,\"escenaId\":2,\"requeridoEscenaId\":1,\"id\":29}",
+      "30": "{\"pregunta\":\"FG\",\"respuesta\":\"FG\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":5,\"principal\":false,\"requerido\":false,\"objetoId\":12,\"escenarioId\":2,\"juegoDeEscapeRoomId\":3,\"escenaId\":2,\"requeridoEscenaId\":1,\"id\":30}",
+      "31": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":1,\"principal\":false,\"requerido\":false,\"objetoId\":15,\"escenarioId\":1,\"juegoDeEscapeRoomId\":3,\"escenaId\":3,\"requeridoEscenaId\":1,\"id\":31}",
+      "32": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":2,\"principal\":false,\"requerido\":false,\"objetoId\":13,\"escenarioId\":1,\"juegoDeEscapeRoomId\":3,\"escenaId\":3,\"requeridoEscenaId\":1,\"id\":32}",
+      "33": "{\"pregunta\":\"GH\",\"respuesta\":\"GH\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":4,\"principal\":true,\"requerido\":false,\"objetoId\":14,\"escenarioId\":1,\"juegoDeEscapeRoomId\":3,\"escenaId\":3,\"requeridoEscenaId\":1,\"id\":33}",
+      "34": "{\"pregunta\":\"HJ\",\"respuesta\":\"HJ\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":5,\"principal\":false,\"requerido\":false,\"objetoId\":16,\"escenarioId\":1,\"juegoDeEscapeRoomId\":3,\"escenaId\":3,\"requeridoEscenaId\":1,\"id\":34}",
+      "35": "{\"pregunta\":\"string\",\"respuesta\":\"string\",\"usado\":false,\"recogido\":false,\"resuelto\":false,\"posicion\":3,\"principal\":false,\"requerido\":false,\"objetoId\":18,\"escenarioId\":1,\"juegoDeEscapeRoomId\":3,\"escenaId\":3,\"requeridoEscenaId\":1,\"id\":35}"
     }
   }
 }

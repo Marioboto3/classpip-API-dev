@@ -6,7 +6,12 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "posicion": {
+      "type": "number",
+      "required": true
+    }
+  },
   "validations": [],
   "relations": {},
   "acls": [
