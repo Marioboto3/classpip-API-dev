@@ -103,7 +103,7 @@
     "JuegoDePuntos": {},
     "JuegoDeColeccion": {},
     "Matricula": {
-      "1": "{\"alumnoId\":1,\"grupoId\":1,\"id\":1}"
+      "1": "{\"alumnoId\":2,\"grupoId\":1,\"id\":1}"
     },
     "AsignacionEquipo": {},
     "AsignacionPuntoJuego": {},
