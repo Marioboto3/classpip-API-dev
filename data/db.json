@@ -1,15 +1,15 @@
 {
   "ids": {
     "Profesor": 3,
-    "Alumno": 4,
+    "Alumno": 6,
     "Grupo": 5,
     "Punto": 1,
-    "Coleccion": 1,
-    "Cromo": 1,
+    "Coleccion": 4,
+    "Cromo": 158,
     "Equipo": 1,
     "JuegoDePuntos": 1,
     "JuegoDeColeccion": 1,
-    "Matricula": 2,
+    "Matricula": 3,
     "AsignacionEquipo": 1,
     "AsignacionPuntoJuego": 1,
     "Nivel": 1,
@@ -37,7 +37,7 @@
     "PreguntaDelCuestionario": 1,
     "SesionClase": 1,
     "AsistenciaClase": 1,
-    "Pregunta": 1,
+    "Pregunta": 233,
     "FamiliaAvatares": 1,
     "JuegoDeAvatar": 1,
     "AlumnoJuegoDeAvatar": 1,
@@ -52,10 +52,10 @@
     "JuegoDeVotacionTodosAUno": 1,
     "AlumnoJuegoDeVotacionTodosAUno": 1,
     "FamiliaImagenesPerfil": 1,
-    "CuestionarioSatisfaccion": 1,
+    "CuestionarioSatisfaccion": 2,
     "JuegoDeCuestionarioSatisfaccion": 1,
     "AlumnoJuegoDeCuestionarioSatisfaccion": 1,
-    "JuegoDeEncuestaRapida": 1,
+    "JuegoDeEncuestaRapida": 2,
     "JuegoDeVotacionRapida": 1,
     "JuegoDeCuestionarioRapido": 1,
     "JuegoDeCogerTurnoRapido": 1,
@@ -85,25 +85,54 @@
   "models": {
     "Profesor": {
       "1": "{\"id\":1,\"nombre\":\"Mario\",\"primerApellido\":\"Primer\",\"segundoApellido\":\"Usuario\",\"username\":\"Mario Test\",\"email\":\"marioboto98@gmail.com\",\"password\":\"test\",\"imagenPerfil\":null,\"identificador\":\"25696\",\"estacion\":\"spring\"}",
-      "2": "{\"id\":2,\"nombre\":\"Ivan\",\"primerApellido\":\"Requena\",\"segundoApellido\":\"García\",\"username\":\"ivan\",\"email\":\"ivan.requena16@gmail.com\",\"password\":\"$2a$10$NAF9POUY2iIXFxgpaGxY5.C9dFSmqQ8NU8jAM1liMJtbhC0hOuIRu\",\"imagenPerfil\":null,\"identificador\":\"96641\",\"estacion\":\"winter\"}"
+      "2": "{\"id\":2,\"nombre\":\"Ivan\",\"primerApellido\":\"Requena\",\"segundoApellido\":\"García\",\"username\":\"ivan\",\"email\":\"ivan.requena@estudiantat.upc.edu\",\"password\":\"$2a$10$zeuo0QgT7EgcppUzopXHDetzIagXtXk85bHY1kvDCAZ6TnsaNV/PS\",\"imagenPerfil\":null,\"identificador\":\"96641\",\"estacion\":\"autumn\"}"
     },
     "Alumno": {
       "1": "{\"nombre\":\"Mario alumno\",\"primerApellido\":\"Sanchez\",\"segundoApellido\":\"Boto\",\"imagenPerfil\":null,\"permisoCambioImagenPerfil\":false,\"username\":\"Mario alumno\",\"email\":\"mario@gmail.com\",\"password\":\"test\",\"profesorId\":1,\"id\":1}",
-      "2": "{\"nombre\":\"Ivan\",\"primerApellido\":\"Requena\",\"segundoApellido\":\"Garcia\",\"imagenPerfil\":null,\"permisoCambioImagenPerfil\":false,\"username\":\"ivan\",\"email\":\"ivan.requena16@gmail.com\",\"password\":\"$2a$10$559fW/N.KqSzugq14w32ru3xXentluAG0JggCZwKS1BhQ4WnsWwK.\",\"profesorId\":1,\"id\":2}",
-      "3": "{\"nombre\":\"Jordi\",\"primerApellido\":\"Salvador\",\"segundoApellido\":\"Carreté\",\"imagenPerfil\":null,\"permisoCambioImagenPerfil\":false,\"username\":\"jorge\",\"email\":\"jordi@gmail.com\",\"password\":\"$2a$10$e4DzdvBdO5LixSEVD4qIB.txH3RKyYOCub1LDsG7SVmI0HgVMZb4.\",\"profesorId\":2,\"permisoCambioimagenPerfil\":false,\"id\":3}"
+      "2": "{\"nombre\":\"Ivan\",\"primerApellido\":\"Requena\",\"segundoApellido\":\"Garcia\",\"imagenPerfil\":\"http://localhost:3000/api/imagenes/ImagenesPerfil/download/Captura.png\",\"permisoCambioImagenPerfil\":true,\"username\":\"ivan\",\"email\":\"ivan.requena16@gmail.com\",\"password\":\"$2a$10$LlHZPvaoLFoOBWBLrMOPUuRYCIWulkjDmgVa8Ch/lKzDL/7Jfo41e\",\"profesorId\":1,\"id\":2}",
+      "3": "{\"nombre\":\"Jordi\",\"primerApellido\":\"Salvador\",\"segundoApellido\":\"Carreté\",\"imagenPerfil\":null,\"permisoCambioImagenPerfil\":false,\"username\":\"jorge\",\"email\":\"jordi@gmail.com\",\"password\":\"$2a$10$e4DzdvBdO5LixSEVD4qIB.txH3RKyYOCub1LDsG7SVmI0HgVMZb4.\",\"profesorId\":2,\"permisoCambioimagenPerfil\":false,\"id\":3}",
+      "4": "{\"nombre\":\"Carlos\",\"primerApellido\":\"Vazquez\",\"segundoApellido\":\"Crespo\",\"imagenPerfil\":null,\"permisoCambioImagenPerfil\":false,\"username\":\"chuli\",\"email\":\"carlos@gmail.com\",\"password\":\"$2a$10$tGzpHkA..c68JsA/ppQXpOATP0r1gf.Gssi2jsVhLBTidU0jE2kDq\",\"profesorId\":2,\"id\":4}",
+      "5": "{\"nombre\":\"Marc\",\"primerApellido\":\"Digon\",\"segundoApellido\":\"Garcia\",\"imagenPerfil\":null,\"permisoCambioImagenPerfil\":false,\"username\":\"marcos\",\"email\":\"marc@gmail.com\",\"password\":\"$2a$10$BctmzGQomduXCJWmoHFoxOkfcSvRlYB5QWhYTPllRBO2MsYckunai\",\"profesorId\":1,\"id\":5}"
     },
     "Grupo": {
       "1": "{\"nombre\":\"Test group\",\"descripcion\":\"First\",\"profesorId\":1,\"id\":1}",
       "4": "{\"nombre\":\"test\",\"descripcion\":\"Prueba\",\"profesorId\":2,\"id\":4}"
     },
     "Punto": {},
-    "Coleccion": {},
-    "Cromo": {},
+    "Coleccion": {
+      "1": "{\"nombre\":\"Compositores\",\"imagenColeccion\":\"compositores.png\",\"dosCaras\":true,\"profesorId\":1,\"id\":1,\"publica\":true,\"recomendacion\":\"¡Usé esta colección para enseñarles los compositores más importantes de la histroia a mis alumnos y los resultados fuero geniales!\"}",
+      "2": "{\"nombre\":\"Comandos Linux\",\"imagenColeccion\":\"linux.jpg\",\"dosCaras\":true,\"publica\":true,\"profesorId\":1,\"id\":2,\"recomendacion\":\"Después de muchos cuatrimestres con muy pocos aprobados en el mínimo de Linux, gracias a esta colección mis alumnos empezaron a mejorar sus notas\"}",
+      "3": "{\"nombre\":\"Prueba dashboard\",\"imagenColeccion\":\"firmaIvan.png\",\"dosCaras\":false,\"publica\":true,\"profesorId\":2,\"id\":3}"
+    },
+    "Cromo": {
+      "137": "{\"nombre\":\"bach\",\"imagenDelante\":\"bach_a.png\",\"imagenDetras\":\"parte7.png\",\"probabilidad\":\"Muy Baja\",\"nivel\":\"Diamante\",\"coleccionId\":1,\"id\":137}",
+      "138": "{\"nombre\":\"chopin\",\"imagenDelante\":\"chopin_a.png\",\"imagenDetras\":\"parte8.png\",\"probabilidad\":\"Alta\",\"nivel\":\"Plata\",\"coleccionId\":1,\"id\":138}",
+      "139": "{\"nombre\":\"tchaicovsky\",\"imagenDelante\":\"tchaicovsky_a.png\",\"imagenDetras\":\"parte9.png\",\"probabilidad\":\"Muy Alta\",\"nivel\":\"Bronce\",\"coleccionId\":1,\"id\":139}",
+      "140": "{\"nombre\":\"beethoven\",\"imagenDelante\":\"beethoven_a.png\",\"imagenDetras\":\"parte4.png\",\"probabilidad\":\"Baja\",\"nivel\":\"Platino\",\"coleccionId\":1,\"id\":140}",
+      "141": "{\"nombre\":\"wagner\",\"imagenDelante\":\"wagner_a.png\",\"imagenDetras\":\"parte3.png\",\"probabilidad\":\"Muy Alta\",\"nivel\":\"Bronce\",\"coleccionId\":1,\"id\":141}",
+      "142": "{\"nombre\":\"brahms\",\"imagenDelante\":\"brahms_a.png\",\"imagenDetras\":\"parte1.png\",\"probabilidad\":\"Muy Alta\",\"nivel\":\"Bronce\",\"coleccionId\":1,\"id\":142}",
+      "143": "{\"nombre\":\"schubert\",\"imagenDelante\":\"schubert_a.png\",\"imagenDetras\":\"parte2.png\",\"probabilidad\":\"Muy Alta\",\"nivel\":\"Bronce\",\"coleccionId\":1,\"id\":143}",
+      "144": "{\"nombre\":\"vivaldi\",\"imagenDelante\":\"vivaldi_a.png\",\"imagenDetras\":\"parte6.png\",\"probabilidad\":\"Muy Alta\",\"nivel\":\"Bronce\",\"coleccionId\":1,\"id\":144}",
+      "145": "{\"nombre\":\"mozart\",\"imagenDelante\":\"mozart_a.png\",\"imagenDetras\":\"parte5.png\",\"probabilidad\":\"Media\",\"nivel\":\"Oro\",\"coleccionId\":1,\"id\":145}",
+      "146": "{\"nombre\":\"factor\",\"imagenDelante\":\"factor_a.png\",\"imagenDetras\":\"factor_b.png\",\"probabilidad\":\"Muy Baja\",\"nivel\":\"Diamante\",\"coleccionId\":2,\"id\":146}",
+      "147": "{\"nombre\":\"tail&head\",\"imagenDelante\":\"tail&head_a.png\",\"imagenDetras\":\"tail&head_b.png\",\"probabilidad\":\"Alta\",\"nivel\":\"Plata\",\"coleccionId\":2,\"id\":147}",
+      "148": "{\"nombre\":\"split\",\"imagenDelante\":\"split_a.png\",\"imagenDetras\":\"split_b.png\",\"probabilidad\":\"Muy Alta\",\"nivel\":\"Bronce\",\"coleccionId\":2,\"id\":148}",
+      "149": "{\"nombre\":\"sort\",\"imagenDelante\":\"sort_a.png\",\"imagenDetras\":\"sort_b.png\",\"probabilidad\":\"Media\",\"nivel\":\"Oro\",\"coleccionId\":2,\"id\":149}",
+      "150": "{\"nombre\":\"du\",\"imagenDelante\":\"du_a.png\",\"imagenDetras\":\"du_b.png\",\"probabilidad\":\"Muy Alta\",\"nivel\":\"Bronce\",\"coleccionId\":2,\"id\":150}",
+      "151": "{\"nombre\":\"diff\",\"imagenDelante\":\"diff_a.png\",\"imagenDetras\":\"diff_b.png\",\"probabilidad\":\"Muy Alta\",\"nivel\":\"Bronce\",\"coleccionId\":2,\"id\":151}",
+      "152": "{\"nombre\":\"rev\",\"imagenDelante\":\"rev_a.png\",\"imagenDetras\":\"rev_b.png\",\"probabilidad\":\"Baja\",\"nivel\":\"Platino\",\"coleccionId\":2,\"id\":152}",
+      "153": "{\"nombre\":\"grep\",\"imagenDelante\":\"grep_a.png\",\"imagenDetras\":\"grep_b.png\",\"probabilidad\":\"Muy Alta\",\"nivel\":\"Bronce\",\"coleccionId\":2,\"id\":153}",
+      "154": "{\"nombre\":\"sed\",\"imagenDelante\":\"sed_a.png\",\"imagenDetras\":\"sed_b.png\",\"probabilidad\":\"Muy Alta\",\"nivel\":\"Bronce\",\"coleccionId\":2,\"id\":154}",
+      "155": "{\"nombre\":\"chmod\",\"imagenDelante\":\"chmod_a.png\",\"imagenDetras\":\"chmod_b.png\",\"probabilidad\":\"Muy Alta\",\"nivel\":\"Bronce\",\"coleccionId\":2,\"id\":155}",
+      "156": "{\"nombre\":\"1\",\"imagenDelante\":\"chulito.JPG\",\"probabilidad\":\"Muy Baja\",\"nivel\":\"Diamante\",\"coleccionId\":3,\"id\":156}",
+      "157": "{\"nombre\":\"2\",\"imagenDelante\":\"firma.png\",\"probabilidad\":\"Baja\",\"nivel\":\"Platino\",\"coleccionId\":3,\"id\":157}"
+    },
     "Equipo": {},
     "JuegoDePuntos": {},
     "JuegoDeColeccion": {},
     "Matricula": {
-      "1": "{\"alumnoId\":1,\"grupoId\":1,\"id\":1}"
+      "1": "{\"alumnoId\":1,\"grupoId\":1,\"id\":1}",
+      "2": "{\"alumnoId\":3,\"grupoId\":4,\"id\":2}"
     },
     "AsignacionEquipo": {},
     "AsignacionPuntoJuego": {},
@@ -126,7 +155,26 @@
     "JornadaDeCompeticionFormulaUno": {},
     "AlumnoJuegoDeCompeticionFormulaUno": {},
     "EquipoJuegoDeCompeticionFormulaUno": {},
-    "Pregunta": {},
+    "Pregunta": {
+      "2": "{\"titulo\":\"Sumas\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"¿Cual es el resultado de 5 + 7?\",\"tematica\":\"Mates\",\"respuestaCorrecta\":\"12\",\"respuestaIncorrecta1\":\"13\",\"respuestaIncorrecta2\":\"11\",\"respuestaIncorrecta3\":\"15\",\"feedbackCorrecto\":\"Muy bien\",\"feedbackIncorrecto\":\"Ven a verme\",\"profesorId\":1,\"id\":2}",
+      "3": "{\"titulo\":\"Restas\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"¿Cuánto es 5-3?\",\"tematica\":\"Mates\",\"respuestaCorrecta\":\"2\",\"respuestaIncorrecta1\":\"1\",\"respuestaIncorrecta2\":\"3\",\"respuestaIncorrecta3\":\"4\",\"feedbackCorrecto\":\"Perfecto\",\"feedbackIncorrecto\":\"Lo tuyo es grave\",\"profesorId\":1,\"id\":3}",
+      "4": "{\"titulo\":\"Autor de Cien años de soledad\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"¿Quién escribió Cien años de soledad?\",\"tematica\":\"Literatura\",\"respuestaCorrecta\":\"Gabriel García Márquez\",\"respuestaIncorrecta1\":\"Velazquez\",\"respuestaIncorrecta2\":\"Llosa\",\"respuestaIncorrecta3\":\"Camilo Jose Cela\",\"feedbackCorrecto\":\"Bien\",\"feedbackIncorrecto\":\"Nooooo\",\"profesorId\":1,\"id\":4}",
+      "5": "{\"titulo\":\"Presidente USA\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"¿Quién es el presidente de USA en 2020?\",\"tematica\":\"Política\",\"respuestaCorrecta\":\"Trump\",\"respuestaIncorrecta1\":\"Obama\",\"respuestaIncorrecta2\":\"Reagan\",\"respuestaIncorrecta3\":\"Nixon\",\"feedbackCorrecto\":\"Si\",\"feedbackIncorrecto\":\"Negativo\",\"profesorId\":1,\"id\":5}",
+      "6": "{\"titulo\":\"Patas de pulpo\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"¿Cuántas patas tiene un pulpo?\",\"tematica\":\"Zoología\",\"respuestaCorrecta\":\"8\",\"respuestaIncorrecta1\":\"5\",\"respuestaIncorrecta2\":\"6\",\"respuestaIncorrecta3\":\"7\",\"feedbackCorrecto\":\"Si\",\"feedbackIncorrecto\":\"No. Por algo le llaman octopus\",\"profesorId\":1,\"id\":6}",
+      "25": "{\"titulo\":\"Sumas\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"¿Cuánto es 7 + 9 ?\",\"tematica\":\"Mates\",\"respuestaCorrecta\":\"16\",\"respuestaIncorrecta1\":\"15\",\"respuestaIncorrecta2\":\"17\",\"respuestaIncorrecta3\":\"0\",\"feedbackCorrecto\":\"Muy bien\",\"feedbackIncorrecto\":\"Fatal\",\"profesorId\":1,\"id\":25}",
+      "33": "{\"titulo\":\"Capitales 1\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"¿Cual es la capital de Francia?\",\"tematica\":\"Geografia\",\"respuestaCorrecta\":\"Paris\",\"respuestaIncorrecta1\":\"Madrid\",\"respuestaIncorrecta2\":\"Roma\",\"respuestaIncorrecta3\":\"Moscu\",\"feedbackCorrecto\":\"Muy bien\",\"feedbackIncorrecto\":\"Fatal\",\"profesorId\":1,\"id\":33}",
+      "34": "{\"titulo\":\"Capitales 2\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"¿Cual es la capital de Rusia?\",\"tematica\":\"Geografia\",\"respuestaCorrecta\":\"Moscu\",\"respuestaIncorrecta1\":\"Madrid\",\"respuestaIncorrecta2\":\"Roma\",\"respuestaIncorrecta3\":\"Paris\",\"feedbackCorrecto\":\"Muy bien\",\"feedbackIncorrecto\":\"Fatal\",\"profesorId\":1,\"id\":34}",
+      "142": "{\"titulo\":\"tipos de jugadores\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"¿Qué tipo de jugador es una persona que necesita completar una colección a toda costa?\",\"tematica\":\"Gamificación\",\"imagen\":\"acongojado.png\",\"respuestaCorrecta\":\"Achiever\",\"respuestaIncorrecta1\":\"Killer\",\"respuestaIncorrecta2\":\"Explorer\",\"respuestaIncorrecta3\":\"Socialite\",\"feedbackCorrecto\":\"Correcto.\",\"feedbackIncorrecto\":\"No. La respuesta correcta es Achiever. Los achieves necesitan completar retos, como por ejemplo, conseguir la insignia de diamantes o tener todos los cromos de la colección.\",\"profesorId\":1,\"id\":142}",
+      "184": "{\"titulo\":\"Motores\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"¿Cuál de los siguientes NO es uno de los 8 motores de Yu-Kay Chen?\",\"tematica\":\"Gamificación\",\"respuestaCorrecta\":\"Vemcer al rival\",\"respuestaIncorrecta1\":\"Curiosidad\",\"respuestaIncorrecta2\":\"Sentido épico\",\"respuestaIncorrecta3\":\"Sensación de logro\",\"feedbackCorrecto\":\"Muy bien\",\"feedbackIncorrecto\":\"No. Vencer al rival es un elemento de motivación (especialmente para los Killers) pero no está entre los 8 motores de Yu-Kay Chen.\",\"profesorId\":2,\"id\":184}",
+      "185": "{\"titulo\":\"Classdojo\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"¿Qué mecánicas de gamificación implementa Classdojo?\",\"tematica\":\"Gamificación\",\"respuestaCorrecta\":\"Asignación de puntos\",\"respuestaIncorrecta1\":\"Colecciones\",\"respuestaIncorrecta2\":\"Avatares\",\"respuestaIncorrecta3\":\"Ninguna de las opciones\",\"feedbackCorrecto\":\"Muy bien\",\"feedbackIncorrecto\":\"Con Classdojo se puede asignar puntos a los alumnos en función de sus méritos y comportamientos\",\"profesorId\":2,\"id\":185}",
+      "186": "{\"titulo\":\"Juego serio\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"¿Qué juego se menciona en los vídeos como ejemplo de juego serio?\",\"tematica\":\"Gamificación\",\"respuestaCorrecta\":\"Monopoly\",\"respuestaIncorrecta1\":\"Bingo\",\"respuestaIncorrecta2\":\"Mus\",\"respuestaIncorrecta3\":\"Dominó\",\"feedbackCorrecto\":\"¡Eso es!\",\"feedbackIncorrecto\":\"Se pone como ejemplo el Monopoly que puede ayudar a los alumnos a aprender el concepto de hipoteca\",\"profesorId\":2,\"id\":186}",
+      "187": "{\"titulo\":\"PBL\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"¿A qué hace referencia las siglas PBL en el contexto de la gamificación?\",\"tematica\":\"Gamificación\",\"respuestaCorrecta\":\"Al uso combinado de Puntos, insignias (Badges) y clasificaciones (Leaderboard)\",\"respuestaIncorrecta1\":\"Al uso de mecánicas de gamificación en combinación con Project Based Learning\",\"respuestaIncorrecta2\":\"A uno de los elementos clave en la teoría de la autodeterminación\",\"respuestaIncorrecta3\":\"Al conjunto de mecánicas adecuadas para motivar a los Explorers\",\"feedbackCorrecto\":\"Muy bien\",\"feedbackIncorrecto\":\"PBL hace referencia al uso de puntos, insignias y clasificaciones, que constituye el conjunto más basíco de mecánicas de gamificación, presentes en la gran mayoría de los juegos\",\"profesorId\":2,\"id\":187}",
+      "228": "{\"titulo\":\"Madrid\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"¿Qué ciudad es?\",\"tematica\":\"Ciudades\",\"imagen\":\"madrid.jpg\",\"feedbackCorrecto\":\"Correcto.\",\"feedbackIncorrecto\":\"No. A ver si viajas más.\",\"respuestaCorrecta\":\"Madrid\",\"respuestaIncorrecta1\":\"Barcelona\",\"respuestaIncorrecta2\":\"Sevilla\",\"respuestaIncorrecta3\":\"Málaga\",\"profesorId\":2,\"id\":228}",
+      "229": "{\"titulo\":\"Empareja\",\"tipo\":\"Emparejamiento\",\"pregunta\":\"Empareja paises con sus capitales\",\"tematica\":\"Ciudades\",\"feedbackCorrecto\":\"Correcto.\",\"feedbackIncorrecto\":\"No. A ver si viajas más.\",\"emparejamientos\":[{\"l\":\"Francia\",\"r\":\"París\"},{\"l\":\"España\",\"r\":\"Madrid\"},{\"l\":\"Italia\",\"r\":\"Roma\"},{\"l\":\"Portugal\",\"r\":\"Lisboa\"}],\"profesorId\":2,\"id\":229}",
+      "230": "{\"titulo\":\"Barcelona\",\"tipo\":\"Respuesta abierta\",\"pregunta\":\"¿Qué ciudad es?\",\"tematica\":\"Ciudades\",\"imagen\":\"barcelona.jpg\",\"feedbackCorrecto\":\"Correcto.\",\"feedbackIncorrecto\":\"No. A ver si viajas más.\",\"respuestaCorrecta\":\"Barcelona\",\"profesorId\":3,\"id\":230}",
+      "231": "{\"titulo\":\"Sevilla\",\"tipo\":\"Verdadero o falso\",\"pregunta\":\"Esta foto es de Barcelona\",\"tematica\":\"Ciudades\",\"imagen\":\"sevilla.jpg\",\"feedbackCorrecto\":\"Correcto.\",\"feedbackIncorrecto\":\"No. A ver si viajas más.\",\"respuestaCorrecta\":\"falso\",\"profesorId\":3,\"id\":231}",
+      "232": "{\"titulo\":\"Futbol\",\"tipo\":\"Cuatro opciones\",\"pregunta\":\"Que equipo es?\",\"tematica\":\"Deportes\",\"imagen\":\"Brescia.png\",\"feedbackCorrecto\":\"Muy bien\",\"feedbackIncorrecto\":\"Muy mal\",\"respuestaCorrecta\":\"Brescia\",\"respuestaIncorrecta1\":\"F.C Barcelona\",\"respuestaIncorrecta2\":\"Juventus\",\"respuestaIncorrecta3\":\"Benevento\",\"emparejamientos\":[],\"profesorId\":3,\"id\":232}"
+    },
     "Cuestionario": {},
     "PreguntaDelCuestionario": {},
     "Escenario": {},
@@ -146,10 +194,14 @@
     "JuegoDeVotacionTodosAUno": {},
     "AlumnoJuegoDeVotacionTodosAUno": {},
     "FamiliaImagenesPerfil": {},
-    "CuestionarioSatisfaccion": {},
+    "CuestionarioSatisfaccion": {
+      "1": "{\"id\":1,\"titulo\":\"TFG Classpip\",\"descripcion\":\"Cuestionario satisfacciÃ³n prueba\",\"publico\":true,\"afirmaciones\":[\"En este curso me estoy divirtiendo\",\"Estoy aprendiendo cosas valiosas\",\"Estoy perdiendo el tiempo y las ganas\",\"Â¿Que clase es esta?\"],\"preguntasAbiertas\":[\"Â¿CuÃ¡l ha sido la tarea mÃ¡s guapa?\",\"Â¿CuÃ¡l ha sido la tarea mÃ¡s aburrida?\"],\"profesorId\":2}"
+    },
     "JuegoDeCuestionarioSatisfaccion": {},
     "AlumnoJuegoDeCuestionarioSatisfaccion": {},
-    "JuegoDeEncuestaRapida": {},
+    "JuegoDeEncuestaRapida": {
+      "1": "{\"id\":1,\"nombreJuego\":\"prueba\",\"tipo\":\"Juego De Encuesta Rápida\",\"clave\":\"52553608\",\"respuestas\":[{\"contestado\":false,\"alumnoId\":0,\"juegoDeCuestionarioSatisfaccionId\":1,\"respuestasAfirmaciones\":[2,4,4,3],\"respuestasPreguntasAbiertas\":[\"a\",\"b\"]},{\"contestado\":false,\"alumnoId\":0,\"juegoDeCuestionarioSatisfaccionId\":1,\"respuestasAfirmaciones\":[3,4,2,3],\"respuestasPreguntasAbiertas\":[\"a\",\"b\"]},{\"contestado\":false,\"alumnoId\":0,\"juegoDeCuestionarioSatisfaccionId\":1,\"respuestasAfirmaciones\":[3,4,2,5],\"respuestasPreguntasAbiertas\":[\"a\",\"b\"]},{\"contestado\":false,\"alumnoId\":0,\"juegoDeCuestionarioSatisfaccionId\":1,\"respuestasAfirmaciones\":[2,3,4,4],\"respuestasPreguntasAbiertas\":[\"a\",\"b\"]},{\"contestado\":false,\"alumnoId\":0,\"juegoDeCuestionarioSatisfaccionId\":1,\"respuestasAfirmaciones\":[3,1,5,5],\"respuestasPreguntasAbiertas\":[\"a\",\"b\"]},{\"contestado\":false,\"alumnoId\":0,\"juegoDeCuestionarioSatisfaccionId\":1,\"respuestasAfirmaciones\":[2,4,2,4],\"respuestasPreguntasAbiertas\":[\"jajaja\",\"jujuju\"]}],\"profesorId\":2,\"cuestionarioSatisfaccionId\":1}"
+    },
     "JuegoDeVotacionRapida": {},
     "JuegoDeCuestionarioRapido": {},
     "JuegoDeCogerTurnoRapido": {},

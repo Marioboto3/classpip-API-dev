@@ -38,6 +38,9 @@
     "identificador": {
       "type": "string",
       "required": true
+    },
+    "estacion": {
+      "type": "string"
     }
   },
   "validations": [],
