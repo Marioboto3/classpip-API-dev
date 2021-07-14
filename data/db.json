@@ -84,7 +84,7 @@
   },
   "models": {
     "Profesor": {
-      "1": "{\"id\":1,\"nombre\":\"Ivan\",\"primerApellido\":\"Requena\",\"segundoApellido\":\"García\",\"username\":\"ivan\",\"email\":\"ivan.requena@estudiantat.upc.edu\",\"password\":\"$2a$10$zeuo0QgT7EgcppUzopXHDetzIagXtXk85bHY1kvDCAZ6TnsaNV/PS\",\"imagenPerfil\":null,\"identificador\":\"96641\",\"estacion\":\"autumn\"}"
+      "1": "{\"id\":1,\"nombre\":\"Ivan\",\"primerApellido\":\"Requena\",\"segundoApellido\":\"García\",\"username\":\"ivan\",\"email\":\"ivan.requena@estudiantat.upc.edu\",\"password\":\"$2a$10$zeuo0QgT7EgcppUzopXHDetzIagXtXk85bHY1kvDCAZ6TnsaNV/PS\",\"imagenPerfil\":null,\"identificador\":\"96641\",\"estacion\":\"winter\"}"
     },
     "Alumno": {
       "1": "{\"nombre\":\"Ivan\",\"primerApellido\":\"Requena\",\"segundoApellido\":\"Garcia\",\"imagenPerfil\":null,\"permisoCambioImagenPerfil\":true,\"username\":\"ivan\",\"email\":\"ivan.requena16@gmail.com\",\"password\":\"$2a$10$LlHZPvaoLFoOBWBLrMOPUuRYCIWulkjDmgVa8Ch/lKzDL/7Jfo41e\",\"profesorId\":1,\"id\":1}",
