@@ -18,7 +18,15 @@
   },
   "AccessToken": {
     "dataSource": "db",
-    "public": false
+    "public": true,
+    "acls": [
+      {
+        "principalType": "ROLE",
+        "principalId": "$authenticated",
+        "permission": "ALLOW",
+        "property": "findById"
+      }
+    ]
   },
   "ACL": {
     "dataSource": "db",
